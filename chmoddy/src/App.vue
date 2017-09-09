@@ -1,17 +1,22 @@
 <template>
   <div id="app">
-    <img src="src/assets/logo.png">
     <h1>{{ msg }}</h1>
+    <input-component></input-component>
   </div>
 </template>
 
 <script>
+import inputComponent from './components/input-component.vue';
+
 export default {
   name: 'app',
   data () {
     return {
-      msg: 'lets get this going!'
+      msg: 'lets get this going'
     }
+  },
+  components: {
+    "input-component": inputComponent,
   }
 }
 </script>

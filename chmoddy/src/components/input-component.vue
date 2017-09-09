@@ -1,7 +1,8 @@
 <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
-  </div>
+<div>
+	<input v-model="message" placeholder="edit me">
+	<p>Message is: {{ message }}</p>
+	</div>
 </template>
 
 <script>
@@ -9,8 +10,9 @@ export default {
   name: 'input-component',
   data () {
     return {
-      msg: 'wow i got this far!'
+      message: 'wow i got this far!'
     }
   }
 }
 </script>
+
