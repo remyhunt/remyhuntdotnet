@@ -3,6 +3,7 @@
 html, body {
     height: calc(100% - 40px);
     width: 100%;
+
 }
 
 hr {
@@ -112,6 +113,43 @@ header .header-content {
     text-align: center;
     padding: 100px 15px 100px;
     width: 100%;
+    text-align: center;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 header .header-content .header-content-inner h1 {
@@ -254,6 +292,7 @@ img:: -moz-selection {
 body {
     background-image: url('../img/pattern.jpg');
     background-attachment: fixed;
+
 }
 
 section {
