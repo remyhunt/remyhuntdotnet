@@ -1,5 +1,5 @@
 (function($) {
-    "use strict"; // Start of use strict
+    "use strict"; 
 
     $(document).on('click', 'a.page-scroll', function(event) {
         var $anchor = $(this);
@@ -20,6 +20,15 @@
         }
     })
 
+
+    var img = "img/header.jpg";
+    $(window).on("load", function() {
+    // weave your magic here.''
+        // alert ("done");
+        document.getElementById('header').style.backgroundImage = 'url('+img+')';
+
+    });
+
  
 
-})(jQuery); // End of use strict
+})(jQuery); 

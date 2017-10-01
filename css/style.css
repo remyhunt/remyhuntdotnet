@@ -20,6 +20,9 @@ hr.wide {
 a:hover, a:focus {
     /*color: #eb3812;*/
     text-decoration: none;
+        -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
 
 h1, h2 {
@@ -31,6 +34,7 @@ h2 {
     display: inline-block;
     text-align: left;
     margin: 10px;
+    text-shadow:1px 1px 1px #333;
 }
 
 .h3light {
@@ -98,11 +102,12 @@ img .img-responsive {
     background-color: transparent;
 }
 
-header {
+
+#header {
     position: relative;
     width: 100%;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    /*background-image: url('../img/header.jpg');*/
     background-attachment: fixed;
     text-align: center;
     color: white;
@@ -119,11 +124,21 @@ header .header-content {
     padding: 100px 15px 100px;
     width: 100%;
     text-align: center;
+}
+
+.headerphoto {
+        animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+.headertext {
     animation: fadein 2s;
     -moz-animation: fadein 2s; /* Firefox */
     -webkit-animation: fadein 2s; /* Safari and Chrome */
     -o-animation: fadein 2s; /* Opera */
 }
+
 @keyframes fadein {
     from {
         opacity:0;
@@ -366,4 +381,8 @@ section {
     text-decoration: none;
     /*color:#757575;*/
     color: #a2a9bc;
+          
+    -webkit-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    transition: all 0.35s;
 }
