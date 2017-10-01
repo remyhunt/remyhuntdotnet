@@ -290,7 +290,7 @@ img:: -moz-selection {
 }
 
 body {
-    background-image: url('../img/pattern.jpg');
+    background-image: url('../img/pattern.png');
     background-attachment: fixed;
 
 }

@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <h1>{{ msg }}</h1>
-    <input-component :bits="bits"></input-component>
+    <input-component ></input-component>
   </div>
 </template>
 
@@ -12,26 +12,7 @@ export default {
   name: 'app',
   data () {
     return {
-      msg: 'UNIX Permissions Calculator',
-      bits: [{
-        value: true
-      }, { 
-        value: true
-      }, { 
-        value: true
-      }, { 
-        value: true
-      }, { 
-        value: true
-      }, { 
-        value: true
-      }, {
-        value: true
-      }, { 
-        value: true
-      }, { 
-        value: true
-      }]
+      msg: 'it works!',
     }
   },
   components: {

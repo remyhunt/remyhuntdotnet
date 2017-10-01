@@ -1,46 +1,25 @@
 <template>
-<div>
-	<ul>
-		<li v-model="bits" v-for="bit in bits" @click="flip(bit)">
- 			<p>{{ bit.value }}</p>
-		</li>
-	</ul>
-	<ul>
-		<li v-for="item in octal">
-	 		 <input type = "text" 
-	 		 	v-model="octalValues" 
-	 		 	:placeholder="item" >
-		</li>
-	</ul>
+<div id="demo">
+
+    <ul v-model="bits" >
+    	<li v-for="(bit, i) in bits" @click="sayHello">
+    		{{ bit }}
+    	</li>
+    </ul>
+
 </div>
 </template>
 
 <script>
 export default {
-  name: 'input-component',
-  data() {
-  	return {
-      octal: [{
-      	value: 7
-      }, 
-      { 
-        value: 7
-      }, 
-      { 
-  		value: 7
-      }]
-    }
+	data () {
+		return {
+    	bits: [0,1,2,3,4]
+		}
   },
-  props: ['bits'],
   methods: {
-   flip: function (bitty) {
-      bitty.value = !bitty.value;
-    }
-  },
-  computed: {
-  	octalValues: function () {
-  		
-  		return 0;
+  	sayHello(bit){
+  		alert(bit)
   	}
   }
 }
@@ -59,13 +38,13 @@ p {
 	background-color:transparent;
 }
 input, ::placeholder {
-	font-size:20px;
+	/*font-size:20px;*/
 	/*font-weight: 800;*/
-	margin:0px;
-	color:#eee;
-	max-width:40px;
-	border: 0px;
-	background-color:transparent;
+	/*margin:0px;*/
+	/*color:#eee;*/
+	/*max-width:40px;*/
+	/*border: 0px;*/
+	/*background-color:transparent;*/
 }
 ::placeholder {	
 	
