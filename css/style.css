@@ -1,7 +1,7 @@
 /* style overrides */
 
 html, body {
-    height: calc(100% - 40px);
+    height: calc(100% - 60px);
     width: 100%;
 
 }
@@ -97,7 +97,7 @@ header {
     position: relative;
     width: 100%;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    /*background-image: url('../img/header.jpg');*/
     background-attachment: fixed;
     text-align: center;
     color: white;
@@ -172,6 +172,7 @@ header .header-content .header-content-inner p {
 }
 
 @media (max-width: 768px) {
+
     .headerphoto {
         float: none;
         margin-right: 0px;
@@ -183,6 +184,12 @@ header .header-content .header-content-inner p {
     }
     section {
         padding: 24px;
+    }
+}
+
+@media (min-width: 1200px) {
+    header {
+        /*background-image: url('../img/header_hr.png');*/
     }
 }
 
@@ -335,7 +342,7 @@ section {
 }
 
 .fa {
-    font-size: 28px;
+    font-size: 36px;
     margin: 5px;
     color: #424242;
 }
