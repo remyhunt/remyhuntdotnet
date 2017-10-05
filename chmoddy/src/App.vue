@@ -1,51 +1,27 @@
 <template>
-  <div id="app">
-    <h1>{{ msg }}</h1>
-    <input-component ></input-component>
+  <div>
+    <input v-model="exampleData">
+
+    <p>{{exampleData}}</p>
   </div>
 </template>
 
 <script>
-import inputComponent from './components/input-component.vue';
+// imports go here
 
-export default {
-  name: 'app',
-  data () {
-    return {
-      msg: 'it works!',
+
+  export default {
+    data() {
+      return {
+        exampleData: 'lets do some maths'
+      }
     }
-  },
-  components: {
-    "input-component": inputComponent,
   }
-}
 </script>
 
-<style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+html {
+  text-align:center;
 }
 
-h1, h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #42b983;
-}
 </style>
