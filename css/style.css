@@ -69,13 +69,13 @@ h2 {
     -webkit-transition: all .5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-    display: none;
+    filter: opacity(0%);
 }
 #permissions:hover>.project-box-detail {
     -webkit-transition: all .5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
-    display: none;
+    filter: opacity(0%);
 }
 .project-box {
     width: 100%;
@@ -97,6 +97,7 @@ h2 {
     transition: all 0.5s;
 }
 .project-box-content {
+
     height: 100%;
     width: 100%;
     padding: 24px;
