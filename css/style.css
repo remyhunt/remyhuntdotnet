@@ -60,7 +60,7 @@ h2 {
     /*position:absolute;*/
 }
 #permissions:hover>.project-box-bg {
-    filter: opacity(85%);
+    filter: opacity(90%);
     -webkit-transition: all .5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -82,7 +82,7 @@ h2 {
     height: 100%;
     height: 240px;
     position: static;
-    /*background-color:white;*/
+    background-color:black;
 }
 .project-box-bg {
     /*width:calc(240px);*/
