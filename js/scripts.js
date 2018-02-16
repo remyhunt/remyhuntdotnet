@@ -21,7 +21,7 @@
     })
 
 
-    var img = "img/header.jpg";
+    var img = "img/zakim.jpg";
     $(window).on("load", function() {
     // weave your magic here.''
         // alert ("done");
