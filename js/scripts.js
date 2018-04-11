@@ -25,7 +25,7 @@
     $(window).on("load", function() {
     // weave your magic here.''
         // alert ("done");
-        document.getElementById('header').style.backgroundImage = 'url('+img+')';
+        // document.getElementById('header').style.backgroundImage = 'url('+img+')';
 
     });
 

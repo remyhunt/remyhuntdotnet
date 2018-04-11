@@ -60,7 +60,7 @@ h2 {
     /*position:absolute;*/
 }
 #permissions:hover>.project-box-bg {
-    filter: opacity(90%);
+    filter: opacity(100%);
     -webkit-transition: all .5s;
     -moz-transition: all 0.5s;
     transition: all 0.5s;
@@ -164,7 +164,7 @@ img .img-responsive {
     position: relative;
     width: 100%;
     background-position: center;
-    /*background-image: url('../img/header.jpg');*/
+    background: linear-gradient(40deg, #00227a , #dcb5ff);
     background-attachment: fixed;
     text-align: center;
     color: white;
@@ -392,7 +392,9 @@ section {
     background-color: white;
 }
 #section-footer {
-    background-color: #334b76;
+    /*background-color: #334b76;*/
+        background: linear-gradient(30deg,  #cc5782,#00227a );
+        /*background-color:coral;*/
     min-height: 80px;
     /*margin:px;*/
     /**/
