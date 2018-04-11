@@ -2,6 +2,7 @@ html, body {
     height: calc(100% - 42px);
     width: 100%;
     font-family:Arial;
+    -webkit-font-smoothing: antialiased;
 }
 
 hr {
@@ -144,15 +145,16 @@ p {
     color: #444;
 }
 
-.bio a {
+.bio .work {
     color: #333;
     border-bottom: 2px solid #333;
 }
 
-.bio a:hover {
+.bio .work:hover {
     color: #c671fc;
     border-bottom: 2px solid white;
 }
+
 
 .mini {
     font-size: 12px;
@@ -354,10 +356,15 @@ header .header-content .header-content-inner p {
 
     .navbar-default {
         background-color: transparent;
-        -webkit-transition: all 0.35s;
+        -webkit-transition: all 0.35s ease;
         -moz-transition: all 0.35s;
         transition: all 0.35s;
         border: 0px;
+
+    }
+    .title{
+        font-size:20px;
+        text-shadow:10px 10px black;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -377,21 +384,27 @@ header .header-content .header-content-inner p {
     }
 
     .navbar-default.affix {
-        background-color: rgba(100, 100, 100, .8);
+        background: linear-gradient(rgba(0,0,0,.25), transparent);
         -webkit-transition: all 0.35s;
         -moz-transition: all 0.35s;
         transition: all 0.35s;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand {
-        color: rgb(25, 25, 25);
+        /*color: rgb(25, 25, 25);*/
+        -webkit-transition: all 0.35s;
+        -moz-transition: all 0.35s;
+        transition: all 0.35s;
+        text-shadow:2px 2px black;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
     }
 
     .navbar-default.affix .nav>li>a, .navbar-default.affix .nav>li>a:focus {
-        color: #222222;
+        /*color: #222222;*/
+                text-shadow:1px 1px black;
+
     }
 
 }
