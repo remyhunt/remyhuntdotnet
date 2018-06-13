@@ -1,8 +1,7 @@
 html, body {
     height: calc(100% - 42px);
     width: 100%;
-    font-family:Arial;
-    -webkit-font-smoothing: antialiased;
+    font-family:Helvetica;
 }
 
 hr {
@@ -27,17 +26,24 @@ h1, h2, h4 {
     font-size: 40px;
     font-weight: 550;
     /*letter-spacing:.4px;*/
+
+    color:transparent;
+
+    -webkit-text-stroke: 1px 1px black;
 }
 
 h2 {
     display: inline-block;
     text-align: left;
     margin: 10px;
-    text-shadow: 1px 1px 1px #333;
 }
 
+.meirl {
+    width:50%
+    /* z-index:2; */
+}
 .h3light {
-    color: #555;
+    color: #999;
 }
 
 .headerphoto {
@@ -47,9 +53,11 @@ h2 {
 }
 
 .headertext {
+    color:black;
+/*  */
     float: right;
     margin-top: 80px;
-    background-color: #222;
+    /* background-color: #222; */
     padding: 8px;
 }
 
@@ -131,21 +139,19 @@ h2 {
     display: all;
     color: #eee;
     font-size: 40px;
-    text-shadow: 2px 2px 1px #333;
 }
 
 .project-box-detail {
     color: #eee;
     font-size: 20px;
     width: 70%;
-    text-shadow: 2px 1px 1px #333;
 }
 
 p {
     font-size: 16px;
     line-height: 1.5;
     margin-bottom: 20px;
-    color: #444;
+    color: #333;
 }
 
 .bio .work {
@@ -200,7 +206,7 @@ img .img-responsive {
     position: relative;
     width: 100%;
     background-position: center;
-    background: linear-gradient(40deg, #00227a, #dcb5ff);
+    /* background: linear-gradient(40deg, #00227a, #dcb5ff); */
     background-attachment: fixed;
     text-align: center;
     color: white;
@@ -275,6 +281,9 @@ header .header-content {
     }
 
 }
+.header-content-inner {
+
+}
 
 header .header-content .header-content-inner h1 {
     font-weight: 400;
@@ -343,7 +352,7 @@ header .header-content .header-content-inner p {
     }
 
     header .header-content .header-content-inner {
-        max-width: 680px;
+        /* max-width: 680px; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -369,7 +378,6 @@ header .header-content .header-content-inner p {
     }
     .title{
         font-size:23px;
-        text-shadow:10px 10px black;
     }
 
     .navbar-default .navbar-header .navbar-brand {
@@ -400,7 +408,6 @@ header .header-content .header-content-inner p {
         -webkit-transition: all 0.35s;
         -moz-transition: all 0.35s;
         transition: all 0.35s;
-        text-shadow:2px 2px black;
     }
 
     .navbar-default.affix .navbar-header .navbar-brand:hover, .navbar-default.affix .navbar-header .navbar-brand:focus {
