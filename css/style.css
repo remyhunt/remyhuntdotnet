@@ -26,17 +26,9 @@ a:hover, a:focus {
     transition: all 0.35s;
 }
 
-h1, h2, h4 {
+h2 {
     font-size: 40px;
     font-weight: 550;
-    /*letter-spacing:.4px;*/
-
-    color:transparent;
-
-    -webkit-text-stroke: 1px 1px black;
-}
-
-h2 {
     display: inline-block;
     text-align: left;
     margin: 10px;
@@ -46,23 +38,13 @@ h2 {
     width:50%
     /* z-index:2; */
 }
-.h3light {
-    color: #999;
-}
 
-.headerphoto {
-    display: inline-block;
-    float: left;
-    margin-right: 20px;
-}
 
 .headertext {
     color:black;
-/*  */
     float: right;
     margin-top: 80px;
     text-align:center;
-    /* background-color: #222; */
     padding: 8px;
 }
 
@@ -71,9 +53,6 @@ h2 {
     font-weight: 500;
 }
 
-.page-scroll {
-    margin-top: 4px;
-}
 
 .project-header-text {
     color: #333;
@@ -248,7 +227,6 @@ header .header-content {
     to {
         opacity: 1;
     }
-
 }
 
 @-moz-keyframes fadein {
@@ -442,7 +420,7 @@ header .header-content .header-content-inner p {
 }
 
 .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: white;
+    color: black;
     border-color: #3D5AFE;
     -webkit-transition: all 0.35s;
     -moz-transition: all 0.35s;
@@ -461,21 +439,7 @@ header .header-content .header-content-inner p {
     padding: 15px 30px;
 }
 
-img::selection {
-    color: white;
-    background: transparent;
-}
 
-img::-moz-selection {
-    color: white;
-    background: transparent;
-}
-
-body {
-    background-image: url('../img/pattern.png');
-    /*background-color:#efefef;*/
-    background-attachment: fixed;
-}
 
 section {
     padding: 20px 60px 60px 60px;
