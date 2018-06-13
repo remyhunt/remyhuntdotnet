@@ -1,7 +1,11 @@
 html, body {
     height: calc(100% - 42px);
     width: 100%;
-    font-family:Helvetica;
+    font-family:'Helvetica Neue';
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    -webkit-animation: fadein 2s;
+    -o-animation: fadein 2s;
 }
 
 hr {
@@ -57,6 +61,7 @@ h2 {
 /*  */
     float: right;
     margin-top: 80px;
+    text-align:center;
     /* background-color: #222; */
     padding: 8px;
 }
@@ -78,7 +83,7 @@ h2 {
     margin-bottom: 24px;
 }
 
-#permissions:hover>.project-box-bg {
+#permissions:hover>.chmoddy {
     filter: opacity(100%);
     -webkit-transition: all .5s;
     -moz-transition: all 0.5s;
@@ -107,7 +112,7 @@ h2 {
     background-color: black;
 }
 
-.project-box-bg {
+.chmoddy{
     height: inherit;
     background-image: url('../img/permissions.png');
     background-size: cover;
@@ -225,10 +230,7 @@ header .header-content {
 }
 
 .me-irl {
-    animation: fadein 1s;
-    -moz-animation: fadein 1s;
-    -webkit-animation: fadein 1s;
-    -o-animation: fadein 1s;
+    
 }
 
 .headertext {
@@ -303,18 +305,39 @@ header .header-content .header-content-inner p {
     font-size: 16px;
     margin-bottom: 50px;
 }
-
+.container {
+    /* og containers are shitty static widths idk why @bootstrap */
+    width:100%
+}
+.project-box {
+    margin-top:20px;
+}
+@media (min-width:1200px)
+{
+    
+    .headertext {
+        transform: translate(-14%, 60%);
+     }
+}
+@media (min-width:992px)
+{
+    
+   
+}
 @media (max-width:768px) {
     .headerphoto {
-        float: none;
         margin-right: 0px;
+        text-align:center;
     }
+
+    
 
     .headertext {
         float: none;
         text-align: center;
         margin-top: 40px;
     }
+    
 
     section {
         padding: 24px;
@@ -322,25 +345,12 @@ header .header-content .header-content-inner p {
 
 }
 
-@media (min-width:1200px) {
-    header {
-    }
-
-    .container {
-        width: 100%;
-    }
-
-}
-
 @media (min-width:768px) {
-    .headerphoto {
-        text-align: center;
-        float: none;
-    }
 
     header {
         min-height: 100%;
     }
+  
 
     header .header-content {
         position: absolute;
@@ -369,11 +379,9 @@ header .header-content .header-content-inner p {
     }
 
     .navbar-default {
-        background-color: transparent;
         -webkit-transition: all 0.35s ease;
         -moz-transition: all 0.35s;
         transition: all 0.35s;
-        border: 0px;
 
     }
     .title{
@@ -477,6 +485,7 @@ section {
     background-color: white;
 }
 
+
 #section-break {
     padding: 20px 80px 120px 80px;
 }
@@ -503,7 +512,7 @@ section {
 }
 
 .fa {
-    font-size: 36px;
+    /* font-size: 36px; */
     margin: 5px;
     /*margin-bottom: 50px;*/
     color: #222;
