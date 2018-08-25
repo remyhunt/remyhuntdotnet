@@ -1,188 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <title>
-        Ashton Hunter
-    </title>
-    <meta name="title" content="Ashton Hunter">
-    <meta name="description" content="Hi, I'm a Software Engineer">
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {
+      background-color:#f9f4f1;
+      padding-left:5em;
+      padding-top:5em;
+    }
+    @font-face {
+        font-family: "karla";
+        src: url("./fonts/Karla-Regular.ttf") format("truetype");
+    }
 
-    <meta charset="utf-8" />
-    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link href="img/favicon.ico" rel="icon" type="img/favicon" />
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    body { 
+        font-family: "karla";
+    }
+    </style>
 </head>
-
 <body>
-
-    <!-- feeling route-y -->
-    <section class="navbar">
-        <a class="navbar-brand title" href="#home">
-            Ashton Hunter
-        </a>
-        <ul class="nav navbar-nav navbar-right">
-            <li>
-                <a href="https://medium.com/@ashthunt" title="Blog">
-                    Blog
-                </a>
-            </li>
-            <li>
-                <a title="About" href="#section-about">
-                    About Me
-                </a>
-            </li>
-        </ul>
-    </section>
-
-    <!-- look at me-->
-    <section class="section-intro">
-        <header id="header">
-            <div class="row">
-                <div class="col-lg-6">
-                    <img class="meirl" src="./img/me.png" />
-                </div>
-                <div class="col-lg-6" text-center>
-                    <h2 class="headertext">
-                        Software Engineer && Web Developer && Human </h2>
-                </div>
-    </section>
-
-    <!-- _rubs paddles together_ ... contact! -->
-    <section id="section-contact">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="box">
-                        <a aria-hidden="true" title="Github" class="" href="https://github.com/ashthunt">
-                            fork_me
-                        </a>
-                        •
-                        <a aria-hidden="true" title="My Resume" title="text" href="files/ashtonhunter.pdf">
-                            resu_me
-                        </a>
-                        •
-                        <a aria-hidden="true" title="Email Me" href="#home" onclick="alert('ashtonhunter3@gmail.com')">
-                            mail_me
-                        </a>
-
-                    </div>
-                    <hr class="wide">
-                    </hr>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- aboot me -->
-    <section id="section-about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6 text-center">
-
-                    <p class="hello">👋 Hey there! </p>
-                    <p class="bio">
-                        I'm Ashton, a software engineer and CS undergrad at
-                        <b>UMass</b> Boston. I'm currently an apprentice at
-                        <b>
-                            <a class="work" href="https://upstatement.com">Upstatement</a>
-                        </b>, a digital design agency, where I help develop content sites for our super cool clients. I was previously
-                        an engineering intern at
-                        <b>
-                            <a class="work" href="https://www.weebly.com">
-                                Weebly</a>,
-                        </b> where I worked on the ecommerce platform.
-                        <br>
-                        <br> Right now, I'm loving my job, and working on a few
-                        <a href="https://github.com/ashthunt">side projects</a> that I'm proud of. </a>
-                        </a>
-                    </p>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <p class="hello">What's my thing?</p>
-                    <p class="bio">
-                        I'm experienced as a full stack
-                        <b>web developer</b>. I've recently been working with languages and tools such as
-                        <b>Vue.js</b>,
-                        <b>Node</b>, and
-                        <b> Laravel. </b> I practice a design philosophy strongly based around
-                        <i>interoperability</i>, and building clean, modular software from the bottom up.
-                        <br>
-                        <br> I love writing code, but when I'm not, you can find me enjoying a cup of coffee ☕, trying new seafood,
-                        or getting lost in the woods.
-                        <link href="/favicon.ico" rel="icon" type="image/x-icon">
-                        </link>
-                    </p>
-
-                </div>
-            </div>
-            <!-- <hr class="wide"> -->
-        </div>
-    </section>
-
-    <!-- not-so-secret projects -->
-    <section id="section-projects">
-        <div class="container">
-            <div class="row">
-                <hr>
-                <p class="hello text-center">Here are some projects that I've been working on 🛠</p>
-                <br>
-                <div class="col-lg-12 col-md-12 text-left">
-                    <h1 class="project-header-text">Recent Projects </h1>
-                </div>
-            </div>
-            <div class="row">
-
-                <a href="https://github.com/ashthunt?tab=repositories">
-                    <div class="col-md-6 text-center">
-                        <div class="project-box" id="permissions">
-                            <div class="project-box-content" id="permissions">
-                                <h5 class="project-box-headline"> Chmod Calculator </h5>
-                                <h6 class="project-box-detail"> calculate UNIX permissions and understand the `chmod` command. </h6>
-                            </div>
-                            <div class="project-box chmoddy">
-                            </div>
-                        </div>
-
-                    </div>
-                </a>
-            </div>
-            <!-- <hr class="wide"> -->
-        </div>
-    </section>
-
-    <!-- contact n shiz -->
-    <section id="section-footer">
-        <div class="container-footer">
-            <div class="row">
-                <div class="col-lg-11 col-md-12 text-right">
-                    <p class="section-footer">
-                        <a href="https://github.com/ashthunt">
-                            Github
-                        </a>
-                        •
-                        <a onclick="alert('ashtonhunter3@gmail.com')">
-                            Contact Me
-                        </a>
-                        <!-- • <a href="/ashthunter.pdf">Resume</a>  -->
-                        •
-                        <a href="files/ashtonhunter.pdf">
-                            Resume
-                        </a>
-                        • © 2018 Ashton Hunter
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <div class="howdy-doo">
+    <p>Hi 👋 I'm Ashton and I'm a software developer. </p>
+    <p>This is my 
+      <a href="http://github.com/ashthunt">Github</a>.
+    </p>
+    <p> I also like designing sites,</p>
+    <p> but I'll work on this one another time!</p>
+  </div>
 
 </body>
-
-<!-- actual footer -->
-<footer>
-    <script src="lib/bootstrap/js/bootstrap.min.js" />
-</footer>
-
 </html>
