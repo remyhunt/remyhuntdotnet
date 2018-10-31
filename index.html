@@ -18,9 +18,10 @@
       color:#9e5e49;
       background-color:#f9f4f1;
       margin:0px;
+      font-size:17px;
     }
     body a {
-      color: #ca7d63
+      color: #ca7d63    
     }
     .container {
       width:95vw;
@@ -69,6 +70,13 @@
       margin-right:10px;
       width:50%;
     }
+ 
+    .el {
+      color: #f36046
+    }
+    .typed-cursor{
+        color: #f36046; 
+    }
     @font-face {
         font-family: "karla";
         src: url("./fonts/Karla-Regular.ttf") format("truetype");
@@ -96,15 +104,38 @@
       </div>
   <div class="howzit">
     <p>Hi 👋 I'm Ashton and I'm a software developer. </p>
-    <br>
+
     <p> I'm a currently a full time undergrad at UMass Boston, </p>
     <p> & looking for a summer internship / fellowship. </p>
-
-
+    <br>
+    <p> Right now, you can find me working on my skills in <span class="el"></span></p>
     <p> </p>
 
   </div>
 
   </div>
 </body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"
+  crossorigin="anonymous"></script>
+
+<script>
+
+  $(function(){
+	$(".el").typed({
+		strings: ["jazz guitar.", "sailing.", "skateboarding.", "film photography."],
+		typeSpeed: 40,
+    startDelay: 1200,
+		backSpeed: 40,
+		backDelay: 1200,
+    loop: true,
+    loopCount: 3, 
+	});
+});
+
+</script>
 </html>
