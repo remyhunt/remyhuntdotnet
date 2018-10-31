@@ -14,12 +14,23 @@
   <style type="text/css">
   
     body {
-      background-color:#f9f4f1;
       font-family: "karla";
-      color:#9e5e49
+      color:#9e5e49;
+      background-color:#f9f4f1;
+      margin:0px;
     }
     body a {
       color: #ca7d63
+    }
+    .container {
+      width:95vw;
+      height:100vh;
+      margin-bottom:0px;
+      padding:0px;
+      margin-top:0px;
+      margin: auto;
+      /* color:Red; */
+      /* background-color:pink; */
     }
     .howzit {
       padding-left:5em;
@@ -31,9 +42,25 @@
     .howzit a:hover {
       color: #f36046;
     }
-    .footy {
-      height:100%;
+    .heady-topper {
+      /* margin-top:100%; */
+      padding-top:20px;
       width:100%;
+      height:40px;
+    }
+    .heady-topper a {
+      text-decoration: none;
+
+    }
+    .heady-left {
+      text-align:left;
+      position:absolute;
+      width:50%;
+    }
+    .heady-right {
+      text-align:right;
+      float:right;
+      width:50%;
     }
     @font-face {
         font-family: "karla";
@@ -47,16 +74,23 @@
     </style>
 </head>
 <body>
+  <div class="container">
+      <div class = "heady-topper">
+        <div class = "heady-left">
+            <a href="./resume-ashton-hunter.pdf"> cv </a>
+        </div>
+        <div class = "heady-right">
+        </div>
+      </div>
   <div class="howzit">
     <p>Hi 👋 I'm Ashton and I'm a software developer. </p>
     <p>This is my 
-      <a href="http://github.com/ashthunt">Github</a>.
+      <a href="https://github.com/ashthunt">Github</a>.
     </p>
     <p> I also like designing sites,</p>
     <p> but I'll work on this one another time!</p>
   </div>
 
-  
-
+  </div>
 </body>
 </html>
