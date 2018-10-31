@@ -37,7 +37,8 @@
       padding-top:5em;
     }
     .howzit a {
-      color: #ca7d63
+      color: #ca7d63;
+      text-decoration-style: dotted;
     }
     .howzit a:hover {
       color: #f36046;
@@ -49,8 +50,12 @@
       height:40px;
     }
     .heady-topper a {
-      text-decoration: none;
+      /* text-decoration: none; */
+      text-decoration-style: dotted;
 
+    }
+    .heady-topper a:hover {
+      color: #f36046;
     }
     .heady-left {
       text-align:left;
@@ -58,8 +63,10 @@
       width:50%;
     }
     .heady-right {
+      cursor: pointer;
       text-align:right;
       float:right;
+      margin-right:10px;
       width:50%;
     }
     @font-face {
@@ -77,18 +84,25 @@
   <div class="container">
       <div class = "heady-topper">
         <div class = "heady-left">
-            <a href="./resume-ashton-hunter.pdf"> cv </a>
+            <a href="./resume-ashton-hunter.pdf">cv</a>
+            &nbsp
+            &nbsp
+            <a href="https://github.com/ashthunt">github</a>
         </div>
         <div class = "heady-right">
+            <a href="" onClick="alert('ashtonhunter3@gmail.com')"> let's talk! </a>
+
         </div>
       </div>
   <div class="howzit">
     <p>Hi 👋 I'm Ashton and I'm a software developer. </p>
-    <p>This is my 
-      <a href="https://github.com/ashthunt">Github</a>.
-    </p>
-    <p> I also like designing sites,</p>
-    <p> but I'll work on this one another time!</p>
+    <br>
+    <p> I'm a currently a full time undergrad at UMass Boston, </p>
+    <p> & looking for a summer internship / fellowship. </p>
+
+
+    <p> </p>
+
   </div>
 
   </div>
