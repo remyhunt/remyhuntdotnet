@@ -15,63 +15,115 @@
   <style type="text/css">
     body {
       font-family: "karla";
-      color: #9e5e49;
-      background-color: #f9f4f1;
+      background-color:white;
       margin: 0px;
       font-size: 17px;
+      height:100vh;
     }
+    .body-wrapper {
 
+    }
     body a {
       color: #ca7d63
     }
 
-    .container {
+    .content-wrapper {
+
+    }
+
+    .above-the-fold-container {
+      background-color:pink;
+    }
+
+    .above-the-fold-content {
+      color: #9e5e49;
       width: 95vw;
-      height: 100vh;
+      height: 90vh;
       margin-bottom: 0px;
       padding: 0px;
       margin-top: 0px;
       margin: auto;
     }
 
-    .howdy {
+    .breaker-container {
+      width: 95vw;
+      height: 300px;
+      margin-bottom: 0px;
+      padding: 0px;
+      margin-top: 0px;
+      margin: auto;
+    }
+
+    .below-the-fold-container {
+      width: 95vw;
+      height: 300px;
+      margin-bottom: 0px;
+      padding: 0px;
+      margin-top: 0px;
+      margin: auto;
+    }
+
+    .maintext {
       padding-left: 4em;
       padding-top: 3em;
       line-height:30px;
       width:400px;
     }
 
-    .howdy a {
+    .maintext a {
       color: #ca7d63;
       text-decoration-style: wavy;
     }
 
-    .howdy a:hover {
+    .maintext a:hover {
       color: #f36046;
     }
 
-    .heady-topper {
+    .floatingtext {
+      position:absolute;
+      margin:0px;
+      padding:0px;
+      top: 100vh;
+      left:15px;
+     text-align: left;
+     width: 100%; 
+
+      font-family: helvetica;
+    font-size: 80px;	/*text-shadow: 5px 4px rgba(200,100, 100,1);*/
+
+    /*-webkit-font-smoothing: antialiased;*/
+
+    /*-moz-osx-font-smoothing: grayscale;*/
+    -webkit-text-stroke: 1px blue;
+  	-webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  }
+    .floatingtext h3 {
+      margin:0px;
+      padding:0px;
+    }
+
+    .header-bar {
       padding-top: 20px;
       font-size:15px;
       width: 100%;
       height: 40px;
     }
 
-    .heady-topper a {
+    .header-bar a {
       text-decoration-style: dotted;
     }
 
-    .heady-topper a:hover {
+    .header-bar a:hover {
       color: #f36046;
     }
 
-    .heady-left {
+    .header-bar-left {
       text-align: left;
       position: absolute;
       width: 50%;
     }
 
-    .heady-right {
+    .header-bar-right {
       cursor: pointer;
       text-align: right;
       float: right;
@@ -103,30 +155,48 @@
 </head>
 
 <body>
-  <div class="container">
-    <div class="heady-topper">
-      <div class="heady-left">
-        <a href="./resume-ashton-hunter.pdf" target="_blank" rel="noopener noreferrer"
-        >cv</a>
-        &nbsp
-        &nbsp
-        <a href="https://github.com/ashthunt" target="_blank" rel="noopener noreferrer"
-        >github</a>
-      </div>
-      <div class="heady-right">
-        let's get to <a href="mailto:ashtonhunter3@gmail.com" target="_blank" rel="noopener noreferrer"
-        >know each other!</a> ️ 
-      </div>
-    </div>
-    <div class="howdy">
-      <p>Hi 👋 I'm Ashton and I'm a software engineer. I'm currently an undergrad at UMass Boston, & I am 
-       looking for my next summer internship. </p>
-      <br>
-      <p> Right now, I'm getting better at <span class="el"></span></p>
+  <!-- <div class="content-wrapper"> -->
+    <div class="above-the-fold-container">
+      <div class="above-the-fold-content">
+        <div class="header-bar">
+          <div class="header-bar-left">
+            <a href="./resume-remy-hunter.pdf" target="_blank" rel="noopener noreferrer"
+            >cv</a>
+            &nbsp
+            &nbsp
+            <a href="https://github.com/remyhunt" target="_blank" rel="noopener noreferrer"
+            >github</a>
+          </div> <!-- header-bar-left -->
+          <div class="header-bar-right">
+            let's get to <a href="mailto:ashton.hunter001@umb.edu" target="_blank" rel="noopener noreferrer"
+            >know each other!</a> ️ 
+          </div> <!-- header-bar-right -->
+        </div> <!-- header-bar -->
 
-    </div>
+        <div class="maintext">
+          <p>Hi 👋 I'm Remy and I'm a software engineer. I'm currently an undergrad at UMass Boston, & I am 
+          looking for my next summer internship. </p>
+          <br>
+          <p> Right now, I'm getting better at <span class="el"></span></p>
+          
+        </div> <!-- maintext -->
 
-  </div>
+      </div> <!-- above-the-fold-container -->
+    </div> <!-- above-the-fold-container -->
+
+
+    <div class = "breaker-container">
+      breaker
+    </div> <!-- breaker-container -->
+
+    <div class = "below-the-fold-container">
+      <div class = "below-the-fold-content">
+        below the fold content
+      </div> <!-- below-the-fold-container -->
+    </div> <!-- below-the-fold-content -->
+
+  <!-- </div> content wrapper -->
+
 </body>
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> -->
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js" crossorigin="anonymous"></script> -->
@@ -136,7 +206,7 @@
 
   $(function () {
     $(".el").typed({
-      strings: ["jazz guitar.", "react.js.", "sailing.", "git.", "skateboarding.", "building APIs.", "film photography."],
+      strings: ["building API's.", "jazz guitar.", "react.js.", "skateboarding.", "graphQL.", "sailing.", "git.", "film photography."],
       typeSpeed: 40,
       startDelay: 1200,
       backSpeed: 40,
