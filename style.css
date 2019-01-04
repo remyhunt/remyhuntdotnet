@@ -3,11 +3,8 @@ body {
   font-variant-ligatures:historical-ligatures;
   background-color:white;
   margin: 0px;
-  font-size: 17px;
   height:100vh;
 }
-
-
 
 ::selection {
  background: yellow;
@@ -19,7 +16,7 @@ body a {
 }
 
 .above-the-fold-container {
-  /* background-color: #fdf2ee; */
+  /* nada */
 }
 
 .above-the-fold-content {
@@ -33,22 +30,23 @@ body a {
   margin: auto;
 }
 
-.breaker-container {
-  width: 95vw;
-  height: 300px;
-  margin-bottom: 0px;
-  padding: 0px;
-  margin-top: 0px;
-  margin: auto;
+.below-the-fold-content h3 {
+  position:absolute;
+  transform: translate(30px, -24px);
+  font-size: 60px;
+  -webkit-text-stroke: 1px #ca7d63;
+  -webkit-text-fill-color:transparent;
 }
 
-.breaker-container h3 {
+.below-the-fold-container h3::before {
+	content: '';
+  display: flex;
   position:absolute;
-  /* transform: translate(0px, -157px); */
-  transform: translate(0px, -50px);
-  font-size: 70px;
-  -webkit-text-stroke: 1px #ca7d63;
-  -webkit-text-fill-color: white;
+  margin:0px;
+  padding:0px;
+	width: 100vh;
+  height: 4px;
+	background: linear-gradient(to right, pink, transparent)
 }
 
 .below-the-fold-container {
@@ -65,7 +63,6 @@ body a {
 }
 
 .emphasis {
-  /* position:absolute; */
   display:inline-flex;
 }
 
@@ -73,8 +70,6 @@ body a {
   display: inline-flex;
   line-height: 14px;
   position: relative;
-  /* top: 24px; */
-  /* left: 32px; */
   z-index: 0;
 }
 .emphasis::after{
@@ -90,39 +85,37 @@ body a {
   transition: all .2s ease-in-out;
 }
 
-.maintext {
-  padding-left: 20vh;
+.above-the-fold-lede {
+  padding-left: 26vh;
   margin-left:0px auto;
   margin-right:0px auto;
-  padding-top: 20vh;
+  padding-top: 12vh;
   display: inline-block;
   position:absolute;
   line-height:30px;
   /* width:400px; */
 }
 
-.maintext a {
+.above-the-fold-lede a {
   color: #5ce3bc;
   text-decoration-style: wavy;
 }
 
-.maintext a:hover {
+.above-the-fold-lede a:hover {
   color: #f36046;
 }
 
 .header-bar {
   font-family: "ibm";
-  padding-top: 20px;
+  padding-top: 30px;
   font-size:15px;
   width: 100%;
   height: 40px;
 }
 
 .header-bar h1 {
-  /* color:red; */
   font-size:20px;
   margin:0px;
-
   margin-top:-5px;
 }
 
@@ -169,7 +162,7 @@ body a {
 }
 
 @media (max-width:768px) {
-  .maintext {
+  .above-the-fold-lede {
     padding-left: 1em;
     width:90%;
   }
