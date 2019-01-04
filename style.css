@@ -1,0 +1,176 @@
+body {
+  font-family: "Helvetica Neue";
+  font-variant-ligatures:historical-ligatures;
+  background-color:white;
+  margin: 0px;
+  font-size: 17px;
+  height:100vh;
+}
+
+
+
+::selection {
+ background: yellow;
+}
+
+body a {
+  color: #ca7d63;
+  /* color: #ca7d63; */
+}
+
+.above-the-fold-container {
+  /* background-color: #fdf2ee; */
+}
+
+.above-the-fold-content {
+  color: #9e5e49;
+  width: 95vw;
+  height: 80vh;
+  min-height:340px;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin: auto;
+}
+
+.breaker-container {
+  width: 95vw;
+  height: 300px;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin: auto;
+}
+
+.breaker-container h3 {
+  position:absolute;
+  /* transform: translate(0px, -157px); */
+  transform: translate(0px, -50px);
+  font-size: 70px;
+  -webkit-text-stroke: 1px #ca7d63;
+  -webkit-text-fill-color: white;
+}
+
+.below-the-fold-container {
+  background-color:#fdf2ee;
+}
+
+.below-the-fold-content {
+  width: 95vw;
+  height: 300px;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-top: 0px;
+  margin: auto;
+}
+
+.emphasis {
+  /* position:absolute; */
+  display:inline-flex;
+}
+
+.emphasis{
+  display: inline-flex;
+  line-height: 14px;
+  position: relative;
+  /* top: 24px; */
+  /* left: 32px; */
+  z-index: 0;
+}
+.emphasis::after{
+  content: '';
+  right: 0;
+  bottom: -4px;
+  background-color:yellow;
+  height: 8px;
+  width: 120px;
+  display: block;
+  position: absolute;
+  z-index: -1;
+  transition: all .2s ease-in-out;
+}
+
+.maintext {
+  padding-left: 20vh;
+  margin-left:0px auto;
+  margin-right:0px auto;
+  padding-top: 20vh;
+  display: inline-block;
+  position:absolute;
+  line-height:30px;
+  /* width:400px; */
+}
+
+.maintext a {
+  color: #5ce3bc;
+  text-decoration-style: wavy;
+}
+
+.maintext a:hover {
+  color: #f36046;
+}
+
+.header-bar {
+  font-family: "ibm";
+  padding-top: 20px;
+  font-size:15px;
+  width: 100%;
+  height: 40px;
+}
+
+.header-bar h1 {
+  /* color:red; */
+  font-size:20px;
+  margin:0px;
+
+  margin-top:-5px;
+}
+
+.header-bar a {
+  text-decoration-style: dotted;
+}
+
+.header-bar a:hover {
+  color: #f36046;
+}
+
+.header-bar-left {
+  text-align: left;
+  position: absolute;
+  width: 50%;
+}
+
+.header-bar-right {
+  cursor: pointer;
+  text-align: right;
+  float: right;
+  margin-right: 10px;
+  width: 50%;
+}
+
+.el {
+  color: #ca7d63;
+  /* font-weight:bold; */
+  
+  /* background-color:rgb(128, 126, 126); */
+}
+
+.typed-cursor {
+  /* color: #f36046; */
+}
+
+@font-face {
+  font-family: "karla";
+  src: url("./fonts/Karla-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "ibm";
+  src: url("./fonts/ibm/IBMPlexMono-Italic.ttf") format("truetype");
+}
+
+@media (max-width:768px) {
+  .maintext {
+    padding-left: 1em;
+    width:90%;
+  }
+}
