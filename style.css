@@ -78,7 +78,7 @@ body a {
 
 .featured-work-container {
   display: flex;
-
+  margin-top: 3vh;
   flex-flow: row wrap;
   justify-content: space-around;
 }
