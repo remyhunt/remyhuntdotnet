@@ -50,7 +50,7 @@ body a {
 }
 
 .footer-container {
-  background-color:white;
+  background-color:gray;
 }
 .footer-content {
 
@@ -74,25 +74,15 @@ body a {
 
 .below-the-fold-content {
   height: 80px;
-  /* width: 95vw; */
-  /* height: 300px; */
-  /* margin-bottom: 0px; */
-  /* padding: 0px; */
-  /* margin-top: 0px; */
-  /* margin: auto; */
 }
 
 .featured-work-container {
-  margin:3vh;
-  margin-top:5vh;
   display: flex;
 
   flex-flow: row wrap;
   justify-content: space-around;
 }
 .featured-work-content {
-  /* transition: flex-basis 500ms ease-in-out; */
-  background-color:pink;
   margin: 5vh;
   flex: 0 0 320px;
   width: 320px;
@@ -108,6 +98,19 @@ body a {
   box-sizing: border-box;
   object-fit: cover;
 }
+.featured-work-image > .featured-work-overlay:hover {
+  filter:blur(3px);
+}
+.featured-work-overlay {
+  display: flex;
+  z-index: 10;
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  background-color:yellow;
+  justify-content: center;
+  opacity: .2;
+}
+
 .emphasis {
   display:inline-flex;
 }
@@ -132,9 +135,9 @@ body a {
 }
 
 .above-the-fold-lede {
-  padding-left: 26vh;
-  margin-left:0px auto;
-  margin-right:0px auto;
+  margin-left: 26vh;
+  /* margin-left:0px auto; */
+  /* margin-right:0px auto; */
   padding-top: 20vh;
   display: inline-block;
   position:absolute;
@@ -224,7 +227,7 @@ body a {
   .above-the-fold-lede {
     width:100%;
     /* text-align:center; */
-    padding-left:1vh;
+    margin-left:1vh;
     vertical-align:middle;
   }
   .below-the-fold-content h3 {
@@ -256,25 +259,11 @@ body a {
     margin-left:0px;
     margin-top:7vh;
   }
-  .featured-work-overlay {
-    /* display: flex;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 300px;
-    width: 350px;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #fff;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
-  }
+
   .featured-work-content {
     width: 90vw;
     height: 40vh;
+    position:relative;
     flex: none;
   }
 }
