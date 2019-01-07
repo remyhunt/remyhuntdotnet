@@ -3,6 +3,7 @@ phtalo: 217eb4
 cadium: fedd45
 canela: 9e5e49
 truffle: ca7d63;
+buttercup: f8ff6a;
 */
 
 body {
@@ -14,7 +15,7 @@ body {
 }
 
 ::selection {
- background: yellow;
+ background: #f8ff6a;
 }
 
 body a {
@@ -45,9 +46,11 @@ body a {
   transform: translate(30px, -24px);
   font-size: 60px;
   /* -webkit-text-stroke: 1px #ca7d63; */
-  -webkit-text-stroke: 1px #fedd45;
+  -webkit-text-stroke: 1.5px #fedd45;
   -webkit-text-fill-color:transparent;
 }
+
+
 
 .footer-container {
   background-color:gray;
@@ -78,11 +81,12 @@ body a {
 
 .featured-work-container {
   display: flex;
-  margin-top: 3vh;
+  margin-top: 6vh;
   flex-flow: row wrap;
   justify-content: space-around;
 }
 .featured-work-content {
+  background-color:white;
   margin: 5vh;
   flex: 0 0 320px;
   width: 320px;
@@ -98,17 +102,43 @@ body a {
   box-sizing: border-box;
   object-fit: cover;
 }
-.featured-work-image > .featured-work-overlay:hover {
-  filter:blur(3px);
-}
+
 .featured-work-overlay {
   display: flex;
   z-index: 10;
   position: absolute;
   left: 0; top: 0; right: 0; bottom: 0;
-  background-color:yellow;
+  background-color:white;
   justify-content: center;
-  opacity: .2;
+  opacity: 0;
+  transition: opacity .75s ease-in-out;
+  -moz-transition: opacity .75s ease-in-out;
+  -webkit-transition: opacity .75s ease-in-out;
+  display: inline;
+  height:100%;
+} 
+
+.featured-work-overlay:hover {
+  opacity:.9;
+  transition: opacity .45s ease-in-out;
+  -moz-transition: opacity .45s ease-in-out;
+  -webkit-transition: opacity .45s ease-in-out;
+}
+
+.featured-work-overlay h3, .featured-work-overlay p{
+  color: #515e65;
+  vertical-align: middle;
+  text-align:center;
+  margin-top:15%;
+}
+
+@keyframes exampleformyselffade {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: .8;
+	}
 }
 
 .emphasis {
@@ -253,18 +283,23 @@ body a {
     position:relative;
     text-align:center;
     margin:0px;
+    margin-top:15px;
     width:100%;
   }
   .featured-work-container {
     margin-left:0px;
-    margin-top:7vh;
+    margin-top:12vh;
   }
 
   .featured-work-content {
     width: 90vw;
     height: 40vh;
+    overflow:hidden;
     position:relative;
     flex: none;
+  }
+  .featured-work-overlay h3, .featured-work-overlay p{
+    margin-top:12%;
   }
 }
 
