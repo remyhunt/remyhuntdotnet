@@ -31,7 +31,6 @@ body a {
 
 .above-the-fold-content {
   color: #9e5e49;
-  width: 95vw;
   height: 93vh;
   min-height:340px;
   margin-bottom: 0px;
@@ -100,6 +99,8 @@ body a {
 
 .featured-work-content {
   background-color:white;
+  /* margin: 0 5vh 0 5vh; */
+  /* margin: 5vh 0vh 5vh vh; */
   margin: 5vh;
   flex: 0 0 320px;
   width: 320px;
@@ -226,7 +227,6 @@ body a {
 .header-bar h1 {
   font-size:22px;
   margin:0px;
-  margin-left:3px;
   margin-top:-10px;
   color: #217eb4;
   /* text-shadow: -1px 1px white, -3px 2px #217eb4; */
@@ -256,13 +256,15 @@ body a {
   text-align: left;
   position: absolute;
   width: 50%;
+  margin-left:2vw;
+
 }
 
 .header-bar-right, .footer-bar-right {
   cursor: pointer;
   text-align: right;
   float: right;
-  margin-right: 10px;
+  margin-right: 2vw;
   width: 50%;
 }
 
@@ -289,9 +291,13 @@ body a {
 @media (max-width:768px) {
   .above-the-fold-lede {
     /* display:inline-block; */
-    width:95vh;
+    width:95%;
+    margin-left: auto;
+    margin-left: 10px;
+    margin-right: auto;
+    
     /* text-align:center; */
-    margin-left:2vh;
+    /* margin-left:10%vh; */
     vertical-align:middle;
   }
   .below-the-fold-content h3 {
