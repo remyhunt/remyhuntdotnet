@@ -9,7 +9,7 @@ slate: 515e65
 */
 
 body {
-  font-family: "Karla";
+  font-family: "Helvetica Neue";
   font-variant-ligatures: historical-ligatures;
   background-color: white;
   margin: 0px;
@@ -139,7 +139,8 @@ body a {
 }
 
 .featured-work-overlay h3, .featured-work-overlay p {
-  color: #515e65;
+  color: #444;
+  font-weight: 500;
   vertical-align: middle;
   text-align: center;
   width: 90%;
@@ -329,6 +330,7 @@ body a {
     width: 100%;
   }
   .featured-work-container {
+    font-family: "Helvetica Neue";
     margin-left: 0px;
     margin-top: 12vh;
   }
