@@ -99,9 +99,10 @@ body a {
 
 .featured-work-content {
   background-color:white;
-  /* margin: 0 5vh 0 5vh; */
-  /* margin: 5vh 0vh 5vh vh; */
+  /* margin: 0px 5vh 0px 5vh; */
+  /* margin: 5vh; */
   margin: 5vh;
+
   flex: 0 0 320px;
   width: 320px;
   height: 240px;
@@ -292,8 +293,8 @@ body a {
   .above-the-fold-lede {
     /* display:inline-block; */
     width:95%;
-    margin-left: auto;
-    margin-left: 10px;
+    /* margin-left:0px; */
+    margin-left: 20px;
     margin-right: auto;
     
     /* text-align:center; */
@@ -316,7 +317,7 @@ body a {
   .header-bar-left {
     position:relative;
     text-align:center;
-
+    margin-left:0px;
     width:100%;
   }
   .header-bar-right {
@@ -333,6 +334,8 @@ body a {
 
   .featured-work-content {
     width: 90vw;
+    margin: 5vh 0vh 5vh 0vh;
+
     height: 40vh;
     overflow:hidden;
     position:relative;
