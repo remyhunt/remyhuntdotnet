@@ -149,6 +149,10 @@ body a {
   /* margin-top: 25%; */
 }
 
+.featured-work-overlay p {
+  font-weight: normal;
+}
+
 .featured-work-overlay a {
   color: red;
   position: static;
