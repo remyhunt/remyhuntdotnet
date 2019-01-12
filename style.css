@@ -249,10 +249,16 @@ body a {
   /* color: #217eb4; */
 }
 
-.header-bar a, .footer-bar a {
+.header-bar a {
   text-decoration-style: dotted;
   /* color: #217eb4; */
   color: #515e65;
+}
+
+.footer-bar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 22px;
 }
 
 .header-bar a:hover, .footer-bar a:hover {
