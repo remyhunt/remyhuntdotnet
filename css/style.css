@@ -217,6 +217,10 @@ body a {
   color: #fedd45;
 }
 
+.header-bar {
+  z-index: 10;
+}
+
 .header-bar, .footer-bar {
   font-family: "ibm";
   padding-top: 30px;
