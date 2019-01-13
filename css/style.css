@@ -294,12 +294,12 @@ body a {
 
 @font-face {
   font-family: "karla";
-  src: url("./fonts/Karla-Regular.ttf") format("truetype");
+  src: url("../fonts/Karla-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ibm";
-  src: url("./fonts/ibm/IBMPlexMono-Italic.ttf") format("truetype");
+  src: url("../fonts/IBMPlexMono-Italic.ttf") format("truetype");
 }
 
 @media (max-width:768px) {
