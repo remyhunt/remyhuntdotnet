@@ -7,11 +7,13 @@ buttercup: f8ff6a;
 tungsten: a2aeb6
 slate: 515e65
 */
-
+html {
+    background-color: #111;
+}
 body {
   font-family: "Helvetica Neue";
   font-variant-ligatures: historical-ligatures;
-  background-color: white;
+
   margin: 0px;
   height: 100vh;
 }
