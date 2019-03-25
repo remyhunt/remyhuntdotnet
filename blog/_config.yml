@@ -17,10 +17,11 @@ title: Things I Build.
 email: hello@remyhunt.net
 description: >- # this means to ignore newlines until "baseurl:"
   Musings, thoughts, research
-baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "https://remyhunt.net" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://remyhunt.net/blog" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: remyhunt
 github_username:  remyhunt
+permalink: pretty
 
 # Build settings
 markdown: kramdown
