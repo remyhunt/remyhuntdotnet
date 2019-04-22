@@ -55,10 +55,9 @@ body {
   font-family: ibm;
   color: white;
   font-size: 13px;
-  vertical-align: right;
-  text-align:right; 
+  vertical-align: left;
   height: 100%;
-  width: 85vw;
+  width: 55vw;
   padding: 0px;
   margin: 0px auto 0px auto;
 }
@@ -291,15 +290,6 @@ body {
   color: #217eb4;
 }
 
-@font-face {
-  font-family: "karla";
-  src: url("../fonts/Karla-Regular.ttf") format("truetype");
-}
-
-@font-face {
-  font-family: "eczar";
-  src: url("../fonts/eczar/Eczar-Regular.ttf") format("truetype");
-}
 
 @font-face {
   font-family: "ibm";
