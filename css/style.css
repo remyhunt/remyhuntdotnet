@@ -211,6 +211,7 @@ body {
   display: inline-block;
   position: absolute;
   line-height: 30px;
+  z-index:-1;
 }
 
 .above-the-fold-lede a {
