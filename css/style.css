@@ -127,21 +127,22 @@ body {
   top: 0;
   right: 0;
   bottom: 0;
-  background-color: #222;
+  background-color: #111;
   justify-content: center;
   opacity: 0;
-  transition: opacity .75s ease-in-out;
-  -moz-transition: opacity .75s ease-in-out;
-  -webkit-transition: opacity .75s ease-in-out;
+  transition: opacity .1s ease-in-out;
+  -moz-transition: opacity .1s ease-in-out;
+  -webkit-transition: opacity .1s ease-in-out;
   display: inline;
   height: 100%;
 }
 
 .featured-work-overlay:hover {
-  opacity: .9;  /*color:black;*/
-  transition: opacity .45s ease-in-out;
-  -moz-transition: opacity .45s ease-in-out;
-  -webkit-transition: opacity .45s ease-in-out;
+  opacity: 1; 
+  /*color:black;*/
+  transition: opacity .2s ease-in-out;
+  -moz-transition: opacity .2s ease-in-out;
+  -webkit-transition: opacity .2s ease-in-out;
 }
 
 .featured-work-overlay h3, .featured-work-overlay p {
