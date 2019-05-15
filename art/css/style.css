@@ -86,7 +86,7 @@ h3 {
 
 .header-right {
 	text-align:right;
-	text-shadow: 3px 3px yellow;
+
 }
 
 .intro-section {
@@ -112,7 +112,8 @@ h3 {
 
 .clear {
 	color: transparent;
-    -webkit-text-stroke: 1px black;
+	text-shadow: 3px 3px yellow;
+  -webkit-text-stroke: 1px black;
 }
 
 .regular {
