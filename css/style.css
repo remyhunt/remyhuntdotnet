@@ -1,8 +1,9 @@
-/* not my proudest CSS, but it's responsive-ish */
-
-/* really, don't look at it */
-
-/* enjoy this color pallate below instead! */
+/** Hey, welcome to my site's CSS.
+  * This isn't my my proudest CSS, but it's responsive-ish.
+  * Note: There was no justification for using newsroom jargon for my css. I just felt like it.
+  * Enjoy this color pallate below instead! I didn't feel like adding a build process 
+  * so decided not to use SCSS.
+  */
 
 /*
 phtalo: 217eb4
@@ -129,6 +130,7 @@ body {
   bottom: 0;
   background-color: #111;
   justify-content: center;
+  vertical-align: middle;
   opacity: 0;
   transition: opacity .1s ease-in-out;
   -moz-transition: opacity .1s ease-in-out;
@@ -202,11 +204,11 @@ body {
 }
 
 .above-the-fold-lede {
-  margin-left: 28vh;
+  margin-left: 12vw;
   font-family: "ibm";
   color: #ddd;
   letter-spacing: 0.005em;
-  font-size: 14px;
+  font-size: calc(1.6vh + .2vw);
   padding-top: 25vh;
   display: inline-block;
   position: absolute;
@@ -350,6 +352,7 @@ body {
 
   .featured-work-overlay {
     padding-top: 2%;
+    margin-top
   }
 
   .featured-work-overlay h3, .featured-work-overlay p {
