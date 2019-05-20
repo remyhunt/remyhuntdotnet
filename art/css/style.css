@@ -72,10 +72,11 @@ h3 {
 .footer {
 	font-family:"gt-america";
 	color:#bbb;
-	height:60px;
+	height:100%;
 	font-size:13px;
 	background-color:black;
 	color:white;
+	padding-bottom:20px;
 }
 .footer-left {
 	margin-top:20px;
@@ -263,7 +264,12 @@ h3 {
 @media (max-width: 768px) {
 	.image-vertical-center {
 		display:none;
+
 	}
+	.footer-right {
+			display:inline-flex;
+	}
+
 	.intro-text {
 		margin-bottom:10vh;
 	}	
