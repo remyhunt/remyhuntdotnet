@@ -208,7 +208,8 @@ body {
   font-family: "ibm";
   color: #ddd;
   letter-spacing: 0.005em;
-  font-size: calc(1.6vh + .2vw);
+  font-size: calc(.4vh + 10px);
+  /*font-size: 14px;*/
   padding-top: 25vh;
   display: inline-block;
   position: absolute;
