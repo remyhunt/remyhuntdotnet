@@ -56,8 +56,9 @@ body {
   color: white;
   font-size: 13px;
   vertical-align: left;
+  /*text-align:left;*/
   height: 100%;
-  width: 55vw;
+  width: 87vw;
   padding: 0px;
   margin: 0px auto 0px auto;
 }
@@ -137,6 +138,7 @@ body {
   -webkit-transition: opacity .1s ease-in-out;
   display: inline;
   height: 100%;
+    /*opacity: ; */
 }
 
 .featured-work-overlay:hover {
