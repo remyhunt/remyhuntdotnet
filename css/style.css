@@ -21,6 +21,7 @@ html {
 
 body {
   font-family: "Helvetica Neue";
+  /*font-family:"ibm";*/
   font-variant-ligatures: historical-ligatures;
   margin: 0px;
   height: 100vh;
@@ -39,14 +40,28 @@ body {
   margin: auto;
 }
 
-.below-the-fold-content h3 {
-  position: absolute;
+
+.transparent {  
+  /*position:absolute;*/
+  display:inline;
+  padding-left:2vh;
+  overflow:hidden;
   transform: translate(30px, -30px);
   font-size: 48px;
   -webkit-text-stroke: 1px #fedd45;
   -webkit-text-fill-color: transparent;
-}
 
+}
+.filled {
+  display:inline;
+  transform: translate(30px, -30px);
+  font-size: 48px;
+  overflow:hidden;
+  padding-left:2vh;
+  /*-webkit-text-stroke: 1px #fedd45;*/
+  -webkit-text-fill-color: #fedd45;
+
+}
 .musings-container {
   min-height: 220px;
 }
@@ -105,9 +120,9 @@ body {
 .featured-work-content {
   background-color: white;
   margin: 5vh;
-  flex: 0 0 320px;
-  width: 320px;
-  height: 240px;
+  /*flex: 0 0 320px;*/
+  width: 40vw;
+  height: 200px;
   position: relative;
   display: flex;
   box-sizing: border-box;
@@ -125,6 +140,8 @@ body {
   display: flex;
   z-index: 10;
   position: absolute;
+  margin-top:auto;
+  margin-bottom:auto;
   left: 0;
   top: 0;
   right: 0;
@@ -206,8 +223,14 @@ body {
 }
 
 .above-the-fold-lede {
-  margin-left: 12vw;
+  margin-left: 24vw;
+  /*margin-left:auto;*/
+  /*margin-right:auto;*/
+  /*width:40px;*/
+  /*width:40vw;*/
   font-family: "ibm";
+  /*background-color:white;*/
+  /*box-shadow:2px 2px white;*/
   color: #ddd;
   letter-spacing: 0.005em;
   font-size: calc(.4vh + 10px);
@@ -339,7 +362,9 @@ body {
 
   .featured-work-container {
     font-family: "Helvetica Neue";
+    /*font-family: "ibm";*/
     font-weight: light;
+    /*font-size:;*/
     margin-left: 0px;
     margin-top: 12vh;
   }
