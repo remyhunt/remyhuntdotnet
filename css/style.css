@@ -32,7 +32,7 @@ body {
 }
 
 .above-the-fold-content {
-  height: 70vh;
+  height: 75vh;
   min-height: 340px;
   margin-bottom: 0px;
   padding: 0px;
@@ -230,10 +230,10 @@ body {
   font-family: "work-sans";
   /*color: #ddd;*/
   letter-spacing: 0.005em;
-  font-size: calc(1vh + 12px);
+  font-size: calc(1vh + 11px);
   /*font-size:10px;*/
   /*font-size: 150%;*/
-  padding-top: 25vh;
+  padding-top: 20vh;
   display: inline-block;
   position: absolute;
   line-height: 30px;
