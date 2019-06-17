@@ -215,7 +215,7 @@ body {
   content: '';
   right: 0;
   bottom: -4px;
-  background-color: #ccc;
+  background-color: #ddd;
   height: 8px;
   width: 124px;
   display: block;
@@ -226,11 +226,12 @@ body {
 
 .above-the-fold-lede {
   margin-left: 5vw;
-  width:80vw;
-  font-family: "ibm";
+  width:85vw;
+  font-family: "work-sans";
   /*color: #ddd;*/
   letter-spacing: 0.005em;
-  font-size: calc(1vh + 10px);
+  font-size: calc(1vh + 12px);
+  /*font-size:10px;*/
   /*font-size: 150%;*/
   padding-top: 25vh;
   display: inline-block;
@@ -255,7 +256,7 @@ body {
 }
 
 .header-bar, .footer-bar {
-  font-family: "ibm";
+  font-family: "work-sans";
   color: white;
   padding-top: 30px;
   font-size: 16px;
@@ -270,7 +271,7 @@ body {
 }
 
 .header-bar h1 {
-  font-family: "ibm";
+  font-family: "work-sans";
   font-size: 30px;
   margin: 0px;
   margin-top: -10px;
@@ -328,8 +329,8 @@ body {
 
 
 @font-face {
-  font-family: "ibm";
-  src: url("../fonts/IBMPlexMono-Italic.ttf") format("truetype");
+  font-family: "work-sans";
+  /*src: url("../fonts/IBMPlexMono-Italic.ttf") format("truetype");*/
   src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
 }
 
