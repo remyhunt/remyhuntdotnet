@@ -300,7 +300,8 @@ body {
 
 .footer-bar a {
   /*color: #ccc;*/
-  font-size: 12px;
+  font-size: 14px;
+  text-decoration:none;
 }
 
 .header-bar a:hover, .footer-bar a:hover {
