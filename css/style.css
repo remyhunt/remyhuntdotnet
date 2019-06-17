@@ -32,7 +32,7 @@ body {
 }
 
 .above-the-fold-content {
-  height: 80vh;
+  height: 70vh;
   min-height: 340px;
   margin-bottom: 0px;
   padding: 0px;
@@ -68,7 +68,7 @@ body {
 
 .musings-content {
   font-family: ibm;
-  color: white;
+  color: black;
   font-size: 13px;
   vertical-align: left;
   /*text-align:left;*/
