@@ -16,11 +16,11 @@ slate: 515e65
 */
 
 html {
-  background-color: #111;
+  background-color: white;
 }
 
 body {
-  font-family: "Helvetica Neue";
+  font-family: "ibm";
   /*font-family:"ibm";*/
   font-variant-ligatures: historical-ligatures;
   margin: 0px;
@@ -32,7 +32,7 @@ body {
 }
 
 .above-the-fold-content {
-  height: 93vh;
+  height: 80vh;
   min-height: 340px;
   margin-bottom: 0px;
   padding: 0px;
@@ -47,8 +47,8 @@ body {
   padding-left:2vh;
   overflow:hidden;
   transform: translate(30px, -30px);
-  font-size: 48px;
-  -webkit-text-stroke: 1px #fedd45;
+  font-size: 52px;
+  -webkit-text-stroke: .5px #fedd45;
   -webkit-text-fill-color: transparent;
 
 }
@@ -96,7 +96,7 @@ body {
 
 .footer-content a {
   color: #217eb4;
-  text-decoration-style: wavy;
+  /*text-decoration-style: r;*/
   text-decoration-color: #fedd45;
 }
 
@@ -119,10 +119,11 @@ body {
 
 .featured-work-content {
   background-color: white;
+  border: 5px solid black;
   margin: 5vh;
   /*flex: 0 0 320px;*/
-  width: 40vw;
-  height: 200px;
+  /*width: 100;*/
+  height: 320px;
   position: relative;
   display: flex;
   box-sizing: border-box;
@@ -172,6 +173,7 @@ body {
   vertical-align: middle;
   text-align: center;
   width: 90%;
+  margin-top:40px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -213,7 +215,7 @@ body {
   content: '';
   right: 0;
   bottom: -4px;
-  background-color: #333;
+  background-color: #ccc;
   height: 8px;
   width: 124px;
   display: block;
@@ -223,29 +225,25 @@ body {
 }
 
 .above-the-fold-lede {
-  margin-left: 24vw;
-  /*margin-left:auto;*/
-  /*margin-right:auto;*/
-  /*width:40px;*/
-  /*width:40vw;*/
+  margin-left: 5vw;
+  width:80vw;
   font-family: "ibm";
-  /*background-color:white;*/
-  /*box-shadow:2px 2px white;*/
-  color: #ddd;
+  /*color: #ddd;*/
   letter-spacing: 0.005em;
-  font-size: calc(.4vh + 10px);
-  /*font-size: 14px;*/
+  font-size: calc(1vh + 10px);
+  /*font-size: 150%;*/
   padding-top: 25vh;
   display: inline-block;
   position: absolute;
   line-height: 30px;
-  /*z-index:-1;*/
 }
 
 .above-the-fold-lede a {
-  color: #217eb4;
-  text-decoration-style: wavy;
-  text-decoration-color: #fedd45;
+  /*color: #217eb4; //blue*/
+  color: #888;
+  text-decoration: none;
+  /*text-decoration-color: #fedd45;*/
+  border-bottom: 1px dashed #bbb;
 }
 
 .above-the-fold-lede a:hover {
@@ -260,7 +258,7 @@ body {
   font-family: "ibm";
   color: white;
   padding-top: 30px;
-  font-size: 15px;
+  font-size: 16px;
   width: 100%;
   height: 40px;
 }
@@ -276,7 +274,7 @@ body {
   font-size: 30px;
   margin: 0px;
   margin-top: -10px;
-  color: #eee;
+  color: black;
 }
 
 .footer-bar p {
@@ -285,14 +283,22 @@ body {
   color: #ccc;
 }
 
+
 .header-bar a {
-  text-decoration-style: dotted;
-  color: #515e65;
-  color: white;
+  text-decoration:none;
+  /*text-decoration-style: dotted;*/
+  /*color: #515e65;*/
+  color: blue;
+}
+.header-bar  a:visited {
+  color: blue;
+}
+.footer-bar a:visited {
+  color:blue;
 }
 
 .footer-bar a {
-  color: #ccc;
+  /*color: #ccc;*/
   font-size: 12px;
 }
 
@@ -324,6 +330,7 @@ body {
 @font-face {
   font-family: "ibm";
   src: url("../fonts/IBMPlexMono-Italic.ttf") format("truetype");
+  src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
 }
 
 @media (max-width:768px) {
@@ -361,13 +368,15 @@ body {
   }
 
   .featured-work-container {
-    font-family: "Helvetica Neue";
+    font-family: "ibm";
     /*font-family: "ibm";*/
     font-weight: light;
     /*font-size:;*/
     margin-left: 0px;
     margin-top: 12vh;
   }
+
+
 
   .featured-work-content {
     width: 90vw;
