@@ -20,7 +20,7 @@ html {
 }
 
 body {
-  font-family: "ibm";
+  font-family: "work-sans";
   /*font-family:"ibm";*/
   font-variant-ligatures: historical-ligatures;
   margin: 0px;
@@ -369,7 +369,7 @@ body {
   }
 
   .featured-work-container {
-    font-family: "ibm";
+    font-family: "work-sans";
     /*font-family: "ibm";*/
     font-weight: light;
     /*font-size:;*/
