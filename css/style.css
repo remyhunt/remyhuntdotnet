@@ -381,6 +381,12 @@ body {
     margin-right: auto;
     vertical-align: middle;
   }
+
+  .self-portrait {
+    right:-40%;
+    top:40%;
+  }
+
   .about {
     width:60vw;
   }
