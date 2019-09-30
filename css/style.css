@@ -151,13 +151,15 @@ body {
 .featured-work-content {
   background-color: white;
   border: 2px solid black;
-  box-shadow: 5px 5px black, 8px 5px yellow;
+  box-shadow: 5px 5px black, 8px 8px yellow;
+  /*box-shadow: 5px 5px black;*/
   /*box-shadow: 5px 5px black;*/
   /*box-shadow: -5px -5px yellow;*/
   margin: 5vh;
   /*flex: 0 0 320px;*/
   height: 300px;
   max-width:550px;
+  width:600px;
   position: relative;
   display: flex;
   box-sizing: border-box;
