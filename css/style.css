@@ -281,12 +281,16 @@ body {
 
 .above-the-fold-lede a {
   /*color: #217eb4; //blue*/
-  color: #888;
+  /* color: #888; */
+  color: blue;
   text-decoration: none;
   /*text-decoration-color: #fedd45;*/
   border-bottom: 1px dotted #bbb;
 }
+.above-the-fold-lede a:visited {
+  columns: #217bb2;;
 
+}
 .above-the-fold-lede a:hover {
   color: #fedd45;
 }
