@@ -41,7 +41,10 @@
         </div> <!-- header-bar-left -->
         <div class="header-bar-right">  
          
-      <!-- <a href="about.html" >/about</a> -->
+        <!-- <a href="about.html" >/about</a> -->
+        <label id="mode" style="color:#888">
+        psst.. dark mode? <input type="checkbox" id="toggle">
+        </label>
         </div> <!-- header-bar-right -->
       </div> <!-- header-bar -->
     <div class="above-the-fold-content">
@@ -176,7 +179,7 @@
 <div class="footer-bar">
 
   <div class="footer-bar-left">
-    <p>Remy Hunter © 2019</p>
+    <p>Remy Hunter © 2019 // hello@remyhunt.net </p>
 
   </div> <!-- footer-bar-left -->
   <div class="footer-bar-right">
@@ -188,11 +191,40 @@
    <a href="https://www.behance.net/ashtonhuntc0e3" target="_blank" rel="noopener noreferrer">
    behance</a>              
    &nbsp;
-   <a href="mailto:hello@remyhunt.net" rel="noopener noreferrer">
-   hello@remyhunt.net</a>
  </div> <!-- footer-bar-right -->    
 </div> <!-- footer-bar -->
 
+<script>
+var toggle = document.getElementById('toggle');
+var html = document.getElementsByTagName('html')[0];
+toggle.addEventListener('change', e => {
+	if (e.target.checked) {
+    html.classList.add('darkmode');
+    console.log('got here');
+	} else {
+		html.classList.remove('darkmode');
+	}
+});
+</script>
+
+<style>
+.darkmode {
+  background-color: #222;
+  color: #ccc;
+}
+.darkmode a {
+  color:#eb34e8;
+}
+.darkmode .emphasis::after {
+  background-color: gray;
+}
+.darkmode .featured-work-content {
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px black, 8px 8px blue;
+}
+
+</style>
 
 </body>
 
