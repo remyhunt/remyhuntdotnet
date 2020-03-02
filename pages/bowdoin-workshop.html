@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Disdainfully, Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139510186-1"></script>
+  <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-139510186-1');
+ </script>
+ 
+
+ <!-- things that arent ga. -->
+ <meta charset="utf-8" />
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <title>Remy Hunter // Developer + Designer </title>
+ <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+ <link href="./css/all.css" rel="stylesheet">
+ <link href="./css/style.css" rel="stylesheet">
+
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="title" content="Remy Hunter">
+ <meta name="description" content="Remy is a creative software engineer who builds things for the web">
+ <meta property="og:locale" content="en_US">
+ <meta property="og:type" content="website">
+ <meta property="og:url" content="https://remyhunt.net">
+ <link rel="icon" href="img/favicon.png" type="image/x-icon" />
+
+ <link href="../css/style.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <div class="above-the-fold-container "> 
+    <div class="header-bar">
+        <div class="header-bar-left">
+          <a href="../index.html" style="text-decoration-color: black"><h1>&larr; Back</h1></a>
+        </div> <!-- header-bar-left -->
+        <div class="header-bar-right">  
+        </div> <!-- header-bar-right -->
+      </div> <!-- header-bar -->
+
+    <div class="above-the-fold-content">
+      <div class="above-the-fold-lede about">
+    </t><h1>Workshop at Bowdoin College Museum of Art</h1>
+
+        <!-- <p> Hi! I'm Remy, a creative <span class = "emphasis"> software engineer</span> in the Boston/Cambridge area who <span class = "emphasis"> builds things on the web.</span></p> -->
+
+
+        <p>
+        </br>
+      </br>
+  
+      <br>
+
+     
+      <br>
+
+
+    </div> <!-- above-the-fold-lede -->
+
+    <div class="self-portrait" data-large="img/bowdoin_1.jpg">
+      <img class="mini loaded" src="img/bowdoin_1_min.jpg" >
+    </div>
+
+  </div> <!-- above-the-fold-container -->
+</div> <!-- above-the-fold-container -->
+
+
+<div class = "below-the-fold-container" id = "work">
+
+  <div class = "below-the-fold-content">
+
+  </div>
+
+
+  <div class="footer-bar">
+
+    <div class="footer-bar-left">
+      <p>Remy Hunter © 2019</p>
+
+    </div> <!-- footer-bar-left -->
+    <div class="footer-bar-right">
+      <a href="files/resume-remy-hunter.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+      &nbsp;
+      <a href="https://github.com/remyhunt" target="_blank" rel="noopener noreferrer"
+      >github</a>
+      &nbsp;
+      <a href="https://www.behance.net/ashtonhuntc0e3" target="_blank" rel="noopener noreferrer">
+      behance</a>              
+      &nbsp;
+      <a href="mailto:hello@remyhunt.net" rel="noopener noreferrer">
+      hello@remyhunt.net</a>
+    </div> <!-- footer-bar-right -->
+  </div> <!-- footer-bar -->
+</div>
+
+
+</body>
+
+<script type="text/javascript">
+  window.onload = function() {
+    var imageElement = document.querySelector('.self-portrait'),
+    small = imageElement.querySelector('.mini')
+    var fullRes = new Image();
+    fullRes.src = imageElement.dataset.large; 
+    fullRes.onload = function () {
+      setTimeout(function(){       
+        fullRes.classList.add('loaded');
+      }, 600);
+    };
+    imageElement.appendChild(fullRes);
+  } 
+</script>   
+
+  </html> 
