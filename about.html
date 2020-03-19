@@ -20,7 +20,8 @@
  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
  <link href="./css/all.css" rel="stylesheet">
  <link href="./css/style.css" rel="stylesheet">
-
+ <link href="./css/image-loader.css" rel="stylesheet">
+ 
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="title" content="Remy Hunter">
  <meta name="description" content="Remy is a creative software engineer who builds things for the web">
@@ -29,7 +30,6 @@
  <meta property="og:url" content="https://remyhunt.net">
  <link rel="icon" href="img/favicon.png" type="image/x-icon" />
 
- <link href="./css/style.css" rel="stylesheet">
 
 
 </head>
@@ -54,7 +54,7 @@
 
         </br>
       </br>
-      I'm currently doing freelance design & development work – Before that, I was at <a href="https://upstatement.com">Upstatement</a> in Boston as an engineering apprentice. Before <i>that</i>, I worked at <a href="https://weebly.com">Weebly</a> in San Francisco as a software engineering intern. ️</p>
+      I've recently been working on freelance design and development projects – Before that, I was at <a href="https://upstatement.com">Upstatement</a> in Boston as an engineering apprentice. Before <i>that</i>, I worked at <a href="https://weebly.com">Weebly</a> in San Francisco as a software engineering intern. ️</p>
 
       <br>
       check out my work &darr; (you can learn a lot about me here)
@@ -66,9 +66,9 @@
         <a href="https://github.com/remyhunt" target="_blank" rel="noopener noreferrer"
         >github</a>
         <br>
-        <a href="https://www.behance.net/ashtonhuntc0e3" target="_blank" rel="noopener noreferrer">
-        behance</a> 
-                <br>
+        <!-- <a href="https://remyhunt.net/blog"" target="_blank" rel="noopener noreferrer">
+        my blog</a> 
+                <br> -->
 
         <br>
       </div>
@@ -77,8 +77,8 @@
 
     </div> <!-- above-the-fold-lede -->
 
-    <div class="self-portrait" data-large="img/me_color.jpeg">
-      <img class="mini loaded" src="img/me_color_min.jpeg" >
+    <div class="image-large" data-large="img/me_color.jpeg" style="top:30%;right:10%;width:400px;height:300px;">
+      <img class="image-small loaded" src="img/me_color_min.jpeg" >
     </div>
 
   </div> <!-- above-the-fold-container -->
@@ -118,8 +118,8 @@
 
 <script type="text/javascript">
   window.onload = function() {
-    var imageElement = document.querySelector('.self-portrait'),
-    small = imageElement.querySelector('.mini')
+    var imageElement = document.querySelector('.image-large'),
+    small = imageElement.querySelector('.image-small')
     var fullRes = new Image();
     fullRes.src = imageElement.dataset.large; 
     fullRes.onload = function () {
