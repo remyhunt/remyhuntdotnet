@@ -9,9 +9,9 @@ var hours = today.getHours();
 
 console.log(hours);
 
-// window.setTimeOut = (alert('hi'), 5000);
+
 setTimeout(function() {
-    hours > 11 && hours < 13 ? setDarkMode(true) : setDarkMode(false);
+    hours > 20 || hours < 8 ? setDarkMode(true) : setDarkMode(false);
 }, 1000);
 
 
