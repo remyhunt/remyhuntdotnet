@@ -12,7 +12,8 @@
  <link href="./css/all.css" rel="stylesheet">
  <link href="./css/style.css" rel="stylesheet">
  <link href="./css/image-loader.css" rel="stylesheet">
- 
+ <link href="./css/darkmode.css" rel="stylesheet">
+
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="title" content="Remy Hunter">
  <meta name="description" content="Remy is a creative software engineer who builds things for the web">
@@ -32,6 +33,9 @@
           <a href="./index.html" style="text-decoration-color: black"><h1>&larr; Back</h1></a>
         </div> <!-- header-bar-left -->
         <div class="header-bar-right">  
+          <label id="mode" style="color:#888">
+            <p class="dark-mode-label" style="display:inline;"></p> <input type="checkbox" id="toggle">
+          </label>
         </div> <!-- header-bar-right -->
       </div> <!-- header-bar -->
 
@@ -68,7 +72,7 @@
 
     </div> <!-- above-the-fold-lede -->
 
-    <div class="image-large" data-large="img/me_color.jpeg" style="top:30%;right:10%;width:400px;height:300px;">
+    <div class="image-large" data-large="img/me_color.jpeg"">
       <img class="image-small loaded" src="img/me_color_min.jpeg" >
     </div>
 
@@ -107,19 +111,8 @@
 
 </body>
 
-<script type="text/javascript">
-  window.onload = function() {
-    var imageElement = document.querySelector('.image-large'),
-    small = imageElement.querySelector('.image-small')
-    var fullRes = new Image();
-    fullRes.src = imageElement.dataset.large; 
-    fullRes.onload = function () {
-      setTimeout(function(){       
-        fullRes.classList.add('loaded');
-      }, 600);
-    };
-    imageElement.appendChild(fullRes);
-  } 
-</script>   
+
+<script src="js/image-loader.js"></script>
+<script src="js/darkmode.js"></script>
 
   </html> 

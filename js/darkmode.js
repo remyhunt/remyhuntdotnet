@@ -12,8 +12,7 @@ var hours = today.getHours();
 setTimeout(function() {
 	if(window.matchMedia) {
 		if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-			darkModeLabel.innerHTML = '(dark mode detected) 💡 lights on?';
-			setDarkMode(true);
+			setDarkMode(true, '(dark mode detected) 💡 lights on?');
 		} else {
 			setDarkMode(false);
 		}
@@ -40,7 +39,7 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => {
 });
 
 
-function setDarkMode(isDark){
+function setDarkMode(isDark, customMessage){
 	if(isDark == true) {
 		html.classList.add('darkmode');
 		toggle.checked = true;
@@ -50,5 +49,9 @@ function setDarkMode(isDark){
 		html.classList.remove('darkmode');
 		toggle.checked = false;
 		darkModeLabel.innerHTML = '🌙 psst? dark mode? '
+	}
+	
+	if(customMessage) {
+		darkModeLabel.innerHTML = customMessage;
 	}
 }

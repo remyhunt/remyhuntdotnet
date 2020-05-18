@@ -18,7 +18,12 @@
     border: 2px solid black;
     box-shadow: 5px 5px black, 8px 8px blue;
 }
-
+.darkmode .image-large img {
+    filter: grayscale(100%);
+}
+.darkmode .image-loading {
+    filter: grayscale(100%);
+}
 @keyframes fadeIn {
     0% {
         opacity: 0;

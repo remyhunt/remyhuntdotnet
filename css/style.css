@@ -359,6 +359,12 @@ body {
   color: #217eb4;
 }
 
+.image-large {
+  top:30%;
+  right:10%;
+  width:400px;
+  height:300px;
+}
 
 @font-face {
   font-family: "work-sans";
@@ -372,6 +378,12 @@ body {
     margin-left: 20px;
     margin-right: auto;
     vertical-align: middle;
+  }
+  .above-the-fold-container {
+    min-height:800px;
+  }
+  .image-large {
+    right: -30%;
   }
 /* 
   .image-large {
@@ -437,6 +449,13 @@ body {
   .featured-work-overlay h3, .featured-work-overlay p {
     margin-top: 4%;
     width: 85%
+  }
+  .footer-bar {
+    margin-bottom:100px; 
+  }
+  .footer-bar-right a {
+    display:block;
+    text-align:right;
   }
 
 }
