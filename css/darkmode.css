@@ -7,8 +7,17 @@
     transition: background-color 1s linear;
     background-color: #222;
 }
+
+.darkmode h1 {
+    color: #eee;
+}
+.darkmode p {
+    mix-blend-mode: difference;
+    color: white;
+}
 .darkmode a {
     color:#eb34e8;
+    mix-blend-mode: normal;
 }
 .darkmode .emphasis::after {
     background-color: gray;
