@@ -376,7 +376,7 @@ br {
     vertical-align: middle;
   }
   .above-the-fold-container {
-    min-height:800px;
+    min-height:600px;
   }
   .image-large {
     right: -30%;
@@ -446,10 +446,22 @@ br {
     width: 85%
   }
   .footer-bar {
-    margin-bottom:100px; 
+    /* margin-bottom:100px;  */
+    display:flex;
+    flex-direction:column-reverse;
+    margin-bottom:20px;
+    /* margin:0px; */
+  }
+  .footer-bar-right, .footer-bar-left {
+    display:flex;
+    float:left;
+    margin:10px 0px 0px 0px;
+    justify-content: center;
+    width:100%;
+    position: relative;
   }
   .footer-bar-right a {
-    display:block;
+    /* display:block; */
     text-align:right;
   }
 
