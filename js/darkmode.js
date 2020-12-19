@@ -1,8 +1,8 @@
 var toggle = document.getElementById('toggle');
 var html = document.getElementsByTagName('html')[0];
-var darkModeLabel = document.getElementsByClassName('dark-mode-label')[0];
+// var darkModeLabel = document.getElementsByClassName('dark-mode-label')[0];
 
-darkModeLabel.innerHTML = '🌙 psst? dark mode? '
+// darkModeLabel.innerHTML = '🌙 psst? dark mode? ';
 
 var today = new Date();
 var hours = today.getHours();
@@ -43,15 +43,15 @@ function setDarkMode(isDark, customMessage){
 	if(isDark == true) {
 		html.classList.add('darkmode');
 		toggle.checked = true;
-		darkModeLabel.innerHTML = '💡 turn the lights back on?';
+		// darkModeLabel.innerHTML = '💡 turn the lights back on?';
 	} 
 	else {
 		html.classList.remove('darkmode');
 		toggle.checked = false;
-		darkModeLabel.innerHTML = '🌙 psst? dark mode? '
+		// darkModeLabel.innerHTML = '🌙 psst? dark mode? '
 	}
 	
 	if(customMessage) {
-		darkModeLabel.innerHTML = customMessage;
+		// darkModeLabel.innerHTML = customMessage;
 	}
 }
