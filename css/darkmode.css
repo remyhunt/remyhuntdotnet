@@ -1,11 +1,17 @@
+html {
+    /* background-color:black; */
+}
 .darkmode {
     color: #ccc;
+    background-color: #222;
     opacity: 1;
+  
+}
+.darkmode-transition {
     animation-name: fadeIn;
     animation-iteration-count: 1;animation-timing-function: ease-in;
     animation-duration: .5s;
-    transition: background-color 1s linear;
-    background-color: #222;
+    transition: background-color 1s linear; 
 }
 
 .darkmode h1 {
@@ -70,7 +76,6 @@
 
 .toggle:before {
   border-radius: 50%;
-
   position: absolute;
   height: 26px;
   width: 26px;
