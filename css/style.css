@@ -48,7 +48,9 @@ body {
   background: #f8ff6a;
 }
 
-
+.above-the-fold-container {
+  min-height:90vh;
+}
 
 .above-the-fold-content {
   min-height: 340px;
@@ -132,9 +134,7 @@ br {
   height: 80px;
 }
 
-.footer-container {
-  height: 80px;
-}
+
 
 .footer-content {
   vertical-align: middle;
@@ -289,12 +289,6 @@ br {
   height: 40px;
 }
 
-.footer-bar {
-  width: 90%;
-  margin-top:20vh;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .header-bar h1 {
   font-family: "work-sans";
@@ -306,14 +300,6 @@ br {
 .header-bar h1:hover {
   color:gray;
 }
-
-.footer-bar p {
-  font-size: 12px;
-  margin: 0px;
-  color: #ccc;
-}
-
-
 .header-bar a {
   text-decoration:none;
   /*text-decoration-style: dotted;*/
@@ -323,6 +309,21 @@ br {
 .header-bar  a:visited {
   color: blue;
 }
+.footer-bar {
+  width: 90%;
+  height:20px;
+  padding-bottom:10px;
+  margin-top:5px;  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bar p {
+  font-size: 12px;
+  margin: 0px;
+  color: #ccc;
+}
+
 .footer-bar a:visited {
   color:blue;
 }
@@ -341,6 +342,10 @@ br {
   text-align: left;
   position: absolute;
   width: 50%;
+}
+
+/* this one is just for the back arrow button */
+.header-bar-left {
   margin-left: 2vw;
 }
 
@@ -351,6 +356,9 @@ br {
   float: right;
   margin-right: 2vw;
   width: 50%;
+}
+.header-bar-right {
+  /* margin-right:50px;  */
 }
 
 .el {
@@ -378,7 +386,7 @@ br {
     vertical-align: middle;
   }
   .above-the-fold-container {
-    min-height:600px;
+    min-height:90vh;
   }
   .image-large {
     right: -30%;
