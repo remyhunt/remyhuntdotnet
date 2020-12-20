@@ -19,17 +19,17 @@ if(sessionStorage.getItem('isDarkMode') != null) {
 			if(window.matchMedia) {
 
 				if(window.matchMedia('(prefers-color-scheme: dark)').matches){
-					setDarkMode(true);
+					setDarkMode(true, true);
 				} else {
-					setDarkMode(false);
+					setDarkMode(false, true);
 				}
 			} 
 			else {
 				if(hours > 20 || hours < 8){ 
-					setDarkMode(true) 
+					setDarkMode(true, true) 
 				} 
 				else { 
-					setDarkMode(false);
+					setDarkMode(false, true);
 				};
 			}
 		}, 800);
@@ -38,13 +38,13 @@ if(sessionStorage.getItem('isDarkMode') != null) {
 
 // Listener for a change in checkbox
 toggle.addEventListener('change', (e) => {
-	e.target.checked ? setDarkMode(true, true): setDarkMode(false); 
+	e.target.checked ? setDarkMode(true, true): setDarkMode(false, true); 
 });
 
 
 // // Listener for a change in Media Query (from system UI)
 window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => {
-	e.matches ? setDarkMode(true) : setDarkMode(false);
+	e.matches ? setDarkMode(true, true) : setDarkMode(false, true);
 });
 
 
@@ -53,19 +53,25 @@ window.matchMedia('(prefers-color-scheme: dark)').addListener( (e) => {
 
 function setDarkMode(isDark, transition){
 	if(isDark == true) {
+		toggle.checked = true;
 		html.classList.add('darkmode'); 
 		if(transition) {
 			html.classList.add('darkmode-transition'); 
+			html.classList.remove('lightmode-transition'); 
 		}
+		
 		sessionStorage.setItem('isDarkMode', 'true');
 		
-		toggle.checked = true;
 		// darkModeLabel.innerHTML = '💡 turn the lights back on?';
 	} 
 	else {
-		sessionStorage.setItem('isDarkMode', 'false');
-		html.classList.remove('darkmode');
 		toggle.checked = false;
+		sessionStorage.setItem('isDarkMode', 'false');
+		if(transition){
+			html.classList.add('lightmode-transition'); 
+			html.classList.remove('darkmode-transition'); 
+		}
+		html.classList.remove('darkmode');
 		// darkModeLabel.innerHTML = '🌙 psst? dark mode? '
 	}
 	

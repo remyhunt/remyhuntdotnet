@@ -18,9 +18,14 @@ slate: 515e65
 html {
   background-color: white; 
   opacity: 1;
-
+  
 }
-
+.lightmode-transition {
+  animation-name: fadeIn;
+  animation-iteration-count: 1;animation-timing-function: ease-in;
+  animation-duration: .5s;
+  transition: background-color 1s linear; 
+}
 @keyframes fadeIn {
   0% {
       opacity: 0;
