@@ -19,12 +19,14 @@ h3 .darkmode {
 }
 
 .darkmode .blog-header  {
-    text-shadow:1px 1px black;
+    /* text-shadow:1px 1px black; */
 }  
 .blog-header-text {
     width: 55vw;
 }
-
+.blog-header-text p {
+    font-size:22px;
+}
 .title {
     display: inline-flex;
     line-height: 14px;

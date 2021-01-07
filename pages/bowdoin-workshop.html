@@ -2,108 +2,157 @@
 <html>
 
 <head>
-
-
-	<!-- Disdainfully, Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139510186-1"></script>
-  <script>
-   window.dataLayer = window.dataLayer || [];
-   function gtag(){dataLayer.push(arguments);}
-   gtag('js', new Date());
-
-   gtag('config', 'UA-139510186-1');
- </script>
- 
-
- <!-- things that arent ga. -->
- <meta charset="utf-8" />
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <title>Remy Hunter // Engineer + Designer </title>
- <link rel="icon" href="img/favicon.png" type="image/x-icon" />
- <link href="./css/all.css" rel="stylesheet">
- <link href="./css/style.css" rel="stylesheet">
-
- <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="title" content="Remy Hunter">
- <meta name="description" content="Remy is a creative software engineer who builds things for the web">
- <meta property="og:locale" content="en_US">
- <meta property="og:type" content="website">
- <meta property="og:url" content="https://remyhunt.net">
- <link rel="icon" href="img/favicon.png" type="image/x-icon" />
-
- <link href="../css/style.css" rel="stylesheet">
- <link href="../css/image-loader.css" rel="stylesheet">
- 
-
+  
+  
+  
+  <!-- things that arent ga. -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Remy Hunter // Engineer + Designer </title>
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="title" content="Remy Hunter">
+  <meta name="description" content="Remy is a creative software engineer who builds things for the web">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://remyhunt.net">
+  <link rel="icon" href="../img/favicon.png" type="image/x-icon" />
+  
+  <link href="../css/style.css" rel="stylesheet">
+  <link href="../css/image-loader.css" rel="stylesheet">
+  <link href="../css/darkmode.css" rel="stylesheet">
+  <link href="../css/blog.css" rel="stylesheet">
+  
 </head>
 
 <body>
- 
-  <div class="above-the-fold-container" style="height:80vh;overflow:hidden;" >   
-     <div class="image-large" style="height:inherit" data-large="img/bowdoin_1.jpg">
-    <img class="image-small loaded" src="img/bowdoin_1_min.jpg" >
+  
+  <div class="above-the-fold-container" style="overflow:hidden;" >   
+    <div class="image-large" style="height:500px;width:40vw;" data-large="img/bowdoin_1.jpg">
+      <img class="image-small loaded" src="img/bowdoin_1_min.jpg" >
     </div> 
-
+    
     <div class="header-bar">
-        <div class="header-bar-left">
-          <a href="../index.html" style="text-decoration-color: black"><h1>&larr; Back</h1></a>
-        </div> <!-- header-bar-left -->
-        <div class="header-bar-right">  
-        </div> <!-- header-bar-right -->
-      </div> <!-- header-bar -->
-
+      
+      <div class="header-bar-left">
+        <a href="../index.html" style="text-decoration-color: black"><h1>&larr; Back</h1></a>
+      </div> <!-- header-bar-left -->
+      
+      <div class="header-bar-right">  
+        <label id="mode" class="night-mode">
+          <input type="checkbox" id="toggle">
+          <span class="toggle"></span>
+        </label> 
+      </div> <!-- header-bar-right -->
+    </div> <!-- header-bar -->
+    
     <div class="above-the-fold-content">
       <div class="above-the-fold-lede ">
-    </t><h1 style="background-color:white; display:inline-block; ">Workshop at Bowdoin College Museum of Art</h1>
-        <p style="background-color:white;display:inline-block; "> 2.28.20 — I designed a workshop for
-            <a href="http://www.nowandthere.org/electroknitdymaxion">Electroknit Dymaxion </a>, a textile-based public art sculpture, which I developed
-            with Cat Mazza and Lattice20 (Currently showing in the  
-            <a href="https://www.bowdoin.edu/art-museum/exhibitions/2020/fast-fashion-slow-art.html">Fast Fashion / Slow Art </a>
-        show, alongside Martha Rosler, Rosemarie Trockel, Carol Frances Lung) </p>
-            <p><i>(more workshop photography to be added) </i> </p>
-        <!-- <p>  -->
-             </span>  
-            <!-- <span class = "emphasis"> </span> -->
-        <!-- </p> -->
-    </div> <!-- above-the-fold-lede -->
+        <div class="blog-header">
+          <h1>Electroknit Dymaxion at Bowdoin College Museum of Art </h1>
+          <div class="blog-header-text">
+            <p> 02.28.2020 – I designed a workshop around Electroknix Dymaxion, a textile-based sculpture, which I developed with Cat Mazza and 
+              the Lattice20 Collective. The sculpture is a part of the exhibit <a href="https://museum.gwu.edu/fast-fashion-slow-art">Fast Fashion/Slow Art</a>,
+              curated by both the Corcoran Museum of GWU and the Bowdoin College Museum of Art.
+              <br><br>
+              The workshop was to teach a bit about the project, the concept, and how it related to the global tradition of 2-dimensional textile patterns. (and a demonstration on how to knit them)
+             
+            </p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div> 
+  
+  
+  <div class = "below-the-fold-container" id = "work">
+    
+    <div class = "below-the-fold-content">
+      
 
-  </div> <!-- above-the-fold-container -->
-</div> <!-- above-the-fold-container -->
+   
 
+     
 
-<div class = "below-the-fold-container" id = "work">
+      <div class="content-center">
+        <div class="img-center">
+          <img class="case-photo"src="img/bowdoin_6.jpg">
+          <p class="image-desc">Punch card for mechanical knitting machine</p>
+        </div>
+        <div class="img-center">
+          <img class="case-photo" src="img/bowdoin_8.jpg">
+          <p class="image-desc">More patterns and process photos from the sculpture fabrication</p>
+        </div>
+        <div class="img-center">
+          <img class="case-photo" src="img/bowdoin_4.jpg">
+          <p class="image-desc">Action photo!! bzz bzz.. laser cutting and etching the outside of the zine</p>
+        </div>
+      </div>
 
-  <div class = "below-the-fold-content">
+      <div class="content-img-left">
+      
+        <div class="img-left">
+          <img class="case-photo" src="img/bowdoin_7.jpg">
+          <p class="image-desc">One of the I designed with Cat. Featuring a foldable Dymaxion globe, Aida cloth, a needle, and thread for cross stitching our own pattern</p>
+        </div>
+       
+        <div class="text-img-left">        
+          <h3>The Zines!</h3>
+          
+          <p>
+          </p>
+      
+        </div>
 
-    ---
+      </div>
 
-  </div>
+   
+     
+      <div class="content-center">
+        <div class="img-center">
+          <img class="case-photo" src="img/bowdoin_3.jpg">
+          <p class="image-desc">late night prototyping</p>
+        </div>
+        <div class="img-center">
+          <img class="case-photo" src="img/bowdoin_9.jpg">
+          <p class="image-desc">Brunswick, Maine being beautiful</p>
+        </div> 
+        <div class="img-center">
+          <img class="case-photo" src="img/bowdoin_5.jpg">
+          <p class="image-desc">some design inspiration at the record store</p>
+        </div>
+      </div>
 
+  
 
-  <div class="footer-bar">
+    
+      <div class="footer-bar">
 
-    <div class="footer-bar-left">
-      <p>Remy Hunter © 2019</p>
+        <div class="footer-bar-left">
+          <p>Remy Hunter © 2020 </p>
+          
+        </div> <!-- footer-bar-left -->
+      
+        <div class="footer-bar-right">
+            <a href="files/remy.hunter.resume.pdf" target="_blank" rel="noopener noreferrer">resume</a>
+            &nbsp;
+            <a href="https://github.com/remyhunt" target="_blank" rel="noopener noreferrer">github</a>
+            &nbsp;
+            <a href="https://medium.com/@remyhunt" target="_blank" rel="noopener noreferrer">
+              medium</a>
+              &nbsp;
+              <a href="mailto:hello@remyhunt.net" rel="noopener noreferrer">
+                hello@remyhunt.net</a>
+        </div> <!-- footer-bar-right -->
+      </div> <!-- footer-bar -->
+    </div>
 
-    </div> <!-- footer-bar-left -->
-    <div class="footer-bar-right">
-      <a href="files/resume-remy-hunter.pdf" target="_blank" rel="noopener noreferrer">resume</a>
-      &nbsp;
-      <a href="https://github.com/remyhunt" target="_blank" rel="noopener noreferrer"
-      >github</a>
-      &nbsp;
-      <a href="https://www.behance.net/ashtonhuntc0e3" target="_blank" rel="noopener noreferrer">
-      behance</a>              
-      &nbsp;
-      <a href="mailto:hello@remyhunt.net" rel="noopener noreferrer">
-      hello@remyhunt.net</a>
-    </div> <!-- footer-bar-right -->
-  </div> <!-- footer-bar -->
-</div>
-
-
+    
 </body>
-
+    
 <script src="../js/darkmode.js"></script>
 <script src="../js/image-loader.js"></script>
+
 </html> 
