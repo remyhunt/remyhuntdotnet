@@ -1,6 +1,6 @@
 p {
     /* font-family: work-sans; */
-    font-size:18px;
+    font-size:16px;
 }
 h1 {
     /* background-color:black; */    font-family: 'sporting';
@@ -65,7 +65,7 @@ h3 .darkmode {
     margin: 0px auto 0px auto;
     padding-bottom:10vh;
     display:flex;
-
+    flex-direction:column;
 }
 .img-center {
     /* display:flex; */
@@ -83,7 +83,7 @@ h3 .darkmode {
 .text-img-right {   
     width:40vw;
     margin: 0px auto 0px auto;
-    margin:0px 5vw 0px 2vw;
+    margin:0px 5vw 0px 0vw;
     padding
 }
 .img-right {
@@ -100,7 +100,7 @@ h3 .darkmode {
 .text-img-left {
     width:40vw;
     margin: 0px auto 0px auto;
-    margin:0px 2vw 0px 5vw;
+    margin:0px 0vw 0px 5vw;
     padding
 }
 .img-left {
@@ -112,12 +112,26 @@ h3 .darkmode {
     .content-img-left {
         flex-wrap:wrap;
         flex-direction:column-reverse;
+        padding-bottom:5vh;
     }  
     .content-img-right {
         flex-wrap:wrap;
+        padding-bottom:5vh;
+    }
+    .content-center {
+        padding-bottom:5vh;
+    }
+    .text-img-left {
+        margin:0px;
+    }
+    .text-img-right {
+        margin:0px;
     }
     .img-left {
         margin-top:5vh;
+        width: 80vw;
+    }
+    .img-center {
         width: 80vw;
     }
     .img-right {
