@@ -1,6 +1,6 @@
 p {
     /* font-family: work-sans; */
-    font-size:16px;
+    font-size:17px;
 }
 h1 {
     /* background-color:black; */    font-family: 'sporting';
@@ -110,6 +110,13 @@ h3 .darkmode {
 }
 
 @media (max-width:1080px) {
+    .blog-header-text {
+        width: 90vw;
+        font-size:22px;
+    }
+    h1 {
+        font-size:30px;
+    }
     .content-img-left {
         flex-wrap:wrap;
         flex-direction:column-reverse;
@@ -150,3 +157,4 @@ h3 .darkmode {
         width: 80vw;
     }
 }
+

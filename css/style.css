@@ -473,7 +473,7 @@ br {
   .footer-bar-right, .footer-bar-left {
     display:flex;
     float:left;
-    margin:10px 0px 0px 0px;
+    margin:20px 0px 0px 0px;
     justify-content: center;
     width:100%;
     position: relative;
