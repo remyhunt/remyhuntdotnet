@@ -65,7 +65,6 @@ h3 .darkmode {
     margin: 0px auto 0px auto;
     padding-bottom:10vh;
     display:flex;
-    flex-direction:column;
 }
 .img-center {
     /* display:flex; */
@@ -120,6 +119,7 @@ h3 .darkmode {
     }
     .content-center {
         padding-bottom:5vh;
+        flex-direction:column;
     }
     .text-img-left {
         margin:0px;
@@ -132,6 +132,7 @@ h3 .darkmode {
         width: 80vw;
     }
     .img-center {
+        margin-top:5vh;
         width: 80vw;
     }
     .img-right {
