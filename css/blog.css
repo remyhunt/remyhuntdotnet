@@ -40,8 +40,7 @@ h3 .darkmode {
 }
 
 .case-photo {
-    max-height:400px;
-    
+    width:inherit;
 }
 .title::after {
     content: '';
@@ -62,7 +61,7 @@ h3 .darkmode {
 }
 
 .content-center {
-    width:80vw;    
+    width:90vw;    
     margin: 0px auto 0px auto;
     padding-bottom:10vh;
     display:flex;
@@ -71,7 +70,7 @@ h3 .darkmode {
 .img-center {
     /* display:flex; */
     margin: 0px auto 0px auto;
-    width:20vw;
+    width:24vw;
 
 }
 
@@ -84,10 +83,11 @@ h3 .darkmode {
 .text-img-right {   
     width:40vw;
     margin: 0px auto 0px auto;
-    margin:0px 5vw 0px 5vw;
-    padding}
+    margin:0px 5vw 0px 2vw;
+    padding
+}
 .img-right {
-    width:40vw;    
+    width:33vw;    
     text-align:center;
 }
 
@@ -100,15 +100,15 @@ h3 .darkmode {
 .text-img-left {
     width:40vw;
     margin: 0px auto 0px auto;
-    margin:0px 5vw 0px 5vw;
+    margin:0px 2vw 0px 5vw;
     padding
 }
 .img-left {
     text-align:center;
-    width:40vw;
+    width:33vw;
 }
 
-@media (max-width:768px) {
+@media (max-width:1080px) {
     .content-img-left {
         flex-wrap:wrap;
         flex-direction:column-reverse;
