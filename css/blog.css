@@ -1,0 +1,135 @@
+p {
+    /* font-family: work-sans; */
+    font-size:18px;
+}
+h1 {
+    /* background-color:black; */    font-family: 'sporting';
+
+}
+h3 {
+    font-family: 'sporting';
+    /* color:white; */
+    font-size:20px;    
+    /* position: absolute;
+    margin-top: -20px;
+    margin-left: -40px; */
+}
+h3 .darkmode {
+    color: white;
+}
+
+.darkmode .blog-header  {
+    text-shadow:1px 1px black;
+}  
+.blog-header-text {
+    width: 55vw;
+}
+
+.title {
+    display: inline-flex;
+    line-height: 14px;
+    position: relative;
+    z-index: 0;
+}
+.image-desc {
+    text-align: center;
+    /* display:flex; */
+    font-size:14px;
+    padding-top:2px;
+    margin-top:2px;
+}
+
+.case-photo {
+    max-height:400px;
+    
+}
+.title::after {
+    content: '';
+    right: 0;
+    bottom: -12px;
+    background-color: rgb(168, 194, 37);
+    height: 8px;
+    width: 140px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+}
+.darkmode .image-large img {
+    filter: none;
+}
+.darkmode .image-loading {
+    filter: none;
+}
+
+.content-center {
+    width:80vw;    
+    margin: 0px auto 0px auto;
+    padding-bottom:10vh;
+    display:flex;
+
+}
+.img-center {
+    /* display:flex; */
+    margin: 0px auto 0px auto;
+    width:20vw;
+
+}
+
+.content-img-right {
+    padding-bottom:10vh;
+    display:flex;
+    margin: 0px auto 0px auto;
+    width:80vw;
+}
+.text-img-right {   
+    width:40vw;
+    margin: 0px auto 0px auto;
+    margin:0px 5vw 0px 5vw;
+    padding}
+.img-right {
+    width:40vw;    
+    text-align:center;
+}
+
+.content-img-left {
+    padding-bottom:10vh;
+    display:flex;
+    margin: 0px auto 0px auto;
+    width:80vw; 
+}
+.text-img-left {
+    width:40vw;
+    margin: 0px auto 0px auto;
+    margin:0px 5vw 0px 5vw;
+    padding
+}
+.img-left {
+    text-align:center;
+    width:40vw;
+}
+
+@media (max-width:768px) {
+    .content-img-left {
+        flex-wrap:wrap;
+        flex-direction:column-reverse;
+    }  
+    .content-img-right {
+        flex-wrap:wrap;
+    }
+    .img-left {
+        margin-top:5vh;
+        width: 80vw;
+    }
+    .img-right {
+        margin-top:5vh;
+        width: 80vw;
+    }
+    .text-img-left {
+        margin-top:5vh;
+        width: 80vw;
+    }
+    .text-img-right {
+        margin-top:5vh;
+        width: 80vw;
+    }
+}

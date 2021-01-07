@@ -372,10 +372,18 @@ br {
   height:300px;
 }
 
+.test {
+  color:red;
+}
+
 @font-face {
   font-family: "work-sans";
   /*src: url("../fonts/IBMPlexMono-Italic.ttf") format("truetype");*/
   src: url("../fonts/WorkSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "sporting";
+  src: url("../fonts/Sporting_Grotesque-Regular.ttf") format("truetype");
 }
 
 @media (max-width:768px) {
@@ -474,5 +482,15 @@ br {
     /* display:block; */
     text-align:right;
   }
+  .featured-work-overlay {
+    background-color:transparent;
+    opacity: 1;
+  }
 
+  .featured-work-overlay h3, .featured-work-overlay p {
+    background-color:black;
+  }
+  .featured-work-overlay p {
+    visibility: hidden;
+  }
 }
