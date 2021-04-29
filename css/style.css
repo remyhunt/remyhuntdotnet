@@ -70,7 +70,9 @@ body {
   font-size: calc(1vh + 15px);
   padding-top: 8vh;
   /* position: absolute; */
-  line-height: 35 px;
+  line-height: 35 px;  
+  max-width:1050px;
+
 }
 .above-the-fold-lede p {
   display: inline;
