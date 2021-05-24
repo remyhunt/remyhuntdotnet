@@ -20,6 +20,9 @@ html {
   opacity: 1;
   
 }
+a:visited {
+  color: blue;
+}
 .lightmode-transition {
   animation-name: fadeIn;
   animation-iteration-count: 1;animation-timing-function: ease-in;
@@ -326,9 +329,6 @@ br {
   color: #ccc;
 }
 
-.footer-bar a:visited {
-  color:blue;
-}
 
 .footer-bar a {
   /*color: #ccc;*/
